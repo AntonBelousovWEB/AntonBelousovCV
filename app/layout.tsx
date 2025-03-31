@@ -19,14 +19,14 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "profile",
-    url: "",
+    url: "https://anton-belousov-cv.vercel.app",
     title: "Anton Belousov - Middle Frontend Developer",
     description:
       "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
     siteName: "Anton Belousov CV",
     images: [
       {
-        url: "",
+        url: "https://anton-belousov-cv.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Anton Belousov - Frontend Developer",
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
     title: "Anton Belousov - Middle Frontend Developer",
     description:
       "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
-    images: [""],
+    images: ["https://anton-belousov-cv.vercel.app/og-image.png"],
   },
 
   alternates: {
-    canonical: "",
+    canonical: "https://anton-belousov-cv.vercel.app/",
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#colorHere',
+  themeColor: '#3b82f6',
 }
 
 export default function RootLayout({
