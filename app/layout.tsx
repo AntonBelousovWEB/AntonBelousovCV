@@ -1,0 +1,78 @@
+import type React from "react"
+import type { Metadata, Viewport } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import SchemaMarkup from "@/components/SchemaMarkup"
+
+const inter = Inter({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "Anton Belousov - Middle Frontend Developer | CV",
+  description:
+    "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization. Specializing in creating high-performance and SEO-optimized web applications.",
+  keywords:
+    "frontend developer, react developer, next.js developer, web optimization, SEO specialist, Anton Belousov, CV, resume, Ukraine developer",
+  authors: [{ name: "Anton Belousov" }],
+  creator: "Anton Belousov",
+  publisher: "Anton Belousov",
+  robots: "index, follow",
+
+  openGraph: {
+    type: "profile",
+    url: "",
+    title: "Anton Belousov - Middle Frontend Developer",
+    description:
+      "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
+    siteName: "Anton Belousov CV",
+    images: [
+      {
+        url: "",
+        width: 1200,
+        height: 630,
+        alt: "Anton Belousov - Frontend Developer",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Anton Belousov - Middle Frontend Developer",
+    description:
+      "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
+    images: [""],
+  },
+
+  alternates: {
+    canonical: "",
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#colorHere',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+      </head>
+      <body className={inter.className}>
+        {children}
+        <SchemaMarkup />
+      </body>
+    </html>
+  )
+}
+
+
+
+import './globals.css'
