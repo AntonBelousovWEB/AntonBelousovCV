@@ -12,6 +12,34 @@ body {
   background: rgb(var(--background-rgb));
 }
 
+html, body {
+  height: 100%;
+}
+
+ul {
+  align-items: baseline;
+}
+
+.header_wrapper {
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box_post {
+  border-radius: 8px !important;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
 @media print {
   body {
     font-size: 12pt;

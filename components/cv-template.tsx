@@ -6,7 +6,17 @@ export default function CVTemplate() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
       <header className="mb-12 md:mb-24">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">Anton Belousov</h1>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">Anton Belousov</h1>
+          <nav className="flex gap-6 text-xl">
+            <Link href="/" className="text-gray-800 hover:text-blue-600 font-medium">
+              CV
+            </Link>
+            <Link href="/blog" className="text-gray-800 hover:text-blue-600 font-medium">
+              Blog
+            </Link>
+          </nav>
+        </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 mb-6 md:mb-12">Middle Frontend Developer</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -282,3 +292,4 @@ export default function CVTemplate() {
     </div>
   )
 }
+
