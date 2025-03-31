@@ -162,7 +162,8 @@ export default function CVTemplate() {
             <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">Languages</h4>
             <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
               <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
+              <li>TypeScript / Flow</li>
+              <li>Rescript</li>
               <li>HTML5</li>
               <li>CSS3 (SCSS)</li>
             </ul>
@@ -174,6 +175,7 @@ export default function CVTemplate() {
               <li>React</li>
               <li>Next.js</li>
               <li>Redux, RTK</li>
+              <li>TanStack</li>
               <li>Tailwind CSS</li>
               <li>Material UI, Ant Design</li>
             </ul>
@@ -216,6 +218,9 @@ export default function CVTemplate() {
         <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <li>
             <strong>Microsoft Office:</strong> Word, Excel, PowerPoint
+          </li>
+          <li>
+            <strong>LibreOffice:</strong> Writer, Calc, Impress
           </li>
           <li>
             <strong>Google Workspace:</strong> Docs, Sheets, Slides
