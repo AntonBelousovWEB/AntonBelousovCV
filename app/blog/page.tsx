@@ -1,5 +1,22 @@
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog-utils"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Anton's Blog - Thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
+  description:
+    "Blog of thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
+  openGraph: {
+    images: [
+      {
+        url: "https://anton-belousov-cv.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Anton Belousov - Anton's Blog",
+      },
+    ],
+  },
+}
 
 export default function BlogPage() {
   const posts = getAllPosts()
@@ -12,9 +29,6 @@ export default function BlogPage() {
           <nav className="flex gap-6 text-xl">
             <Link href="/" className="text-gray-800 hover:text-blue-600 font-medium">
               CV
-            </Link>
-            <Link href="/blog" className="text-gray-800 hover:text-blue-600 font-medium">
-              Blog
             </Link>
           </nav>
         </div>
@@ -37,7 +51,7 @@ export default function BlogPage() {
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="box_post border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                className="box_post border-2 border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">

@@ -6,6 +6,8 @@ excerpt: Learn how to build modern web applications with Next.js, the React fram
 
 # Getting Started with Next.js
 
+![GoKeep Logo](https://images-ext-1.discordapp.net/external/wEVVxML6yVE8GjX-1XMpy21hjmXMS_DmbHUq5L3p5Uk/%3Fallow_animated%3D1/https/community.fastly.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhnwMzYI2gS09W4koWZmfjLP7LWnn8f7JEkj7HCpo700QbtrxBqYz2hItDHJgY4MF2E_1LrwrzqgsXuvpufmGwj5Hc2U6wxhA/330x192?format=webp)
+
 Next.js is a powerful React framework that makes building web applications easier and more efficient. In this post, I'll share my experience with Next.js and why I think it's a great choice for modern web development.
 
 ## Why Next.js?
