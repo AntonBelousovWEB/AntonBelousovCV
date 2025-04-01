@@ -6,7 +6,17 @@ export default function CVTemplate() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
       <header className="mb-12 md:mb-24">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">Anton Belousov</h1>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">Anton Belousov</h1>
+          <nav className="flex gap-6 text-xl">
+            <Link href="/" className="text-gray-800 hover:text-blue-600 font-medium">
+              CV
+            </Link>
+            <Link href="/blog" className="text-gray-800 hover:text-blue-600 font-medium">
+              Blog
+            </Link>
+          </nav>
+        </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 mb-6 md:mb-12">Middle Frontend Developer</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -59,7 +69,9 @@ export default function CVTemplate() {
           performance and code quality. I continuously enhance my skills by staying current with emerging technologies
           and industry best practices, allowing me to deliver innovative solutions to complex challenges. With my
           technical expertise and optimization skills, I can substantially elevate the quality and performance of any
-          project I work on.
+          project I work on. I thrive in collaborative environments, quickly adapting to new teams and contributing to
+          collective success through knowledge sharing, mentorship, and a commitment to achieving exceptional results
+          together.
         </p>
       </section>
 
@@ -164,6 +176,39 @@ export default function CVTemplate() {
 
       <section className="mb-12 md:mb-24">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-4 md:mb-8">
+          Achievements
+        </h3>
+
+        <div className="grid grid-cols-1 gap-6">
+          <div>
+            <h4 className="font-semibold mb-3 text-xl sm:text-2xl">Personal Achievements</h4>
+            <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-4">
+              <li>Improved Core Web Vitals metrics on multiple projects, achieving 90+ scores in PageSpeed Insights</li>
+              <li>Developed a my own FSD based architecture.</li>
+              <li>
+                Optimized loading times of key pages by 40-60% through implementation of modern optimization techniques.
+              </li>
+              <li>
+                Conducted over 10 technical audits for JavaScript code and SEO optimization, significantly improving
+                project performance.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-3 text-xl sm:text-2xl">Team Achievements</h4>
+            <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-4">
+              <li>Mentored two junior developers, helping them improve their code quality and technical skills.</li>
+              <li>
+                Contributed to team's successful migration from a legacy codebase to a modern architecture.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12 md:mb-24">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-4 md:mb-8">
           Technical Skills
         </h3>
 
@@ -173,21 +218,8 @@ export default function CVTemplate() {
             <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
               <li>JavaScript (ES6+)</li>
               <li>TypeScript / Flow</li>
-              <li>Rescript</li>
               <li>HTML5</li>
               <li>CSS3 (SCSS)</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">Frameworks & Libraries</h4>
-            <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Redux, RTK</li>
-              <li>TanStack</li>
-              <li>Tailwind CSS</li>
-              <li>Material UI, Ant Design</li>
             </ul>
           </div>
 
@@ -202,10 +234,15 @@ export default function CVTemplate() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">Testing</h4>
+            <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">Frameworks & Libraries</h4>
             <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
-              <li>Jest</li>
-              <li>React Testing Library</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Redux, RTK</li>
+              <li>GraphQL, Apollo</li>
+              <li>TanStack</li>
+              <li>Tailwind CSS</li>
+              <li>Material UI, Ant Design</li>
             </ul>
           </div>
 
@@ -216,6 +253,14 @@ export default function CVTemplate() {
               <li>Google PageSpeed</li>
               <li>Schema.org</li>
               <li>WhatWG</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">Testing</h4>
+            <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
+              <li>Jest</li>
+              <li>React Testing Library</li>
             </ul>
           </div>
         </div>
@@ -252,10 +297,14 @@ export default function CVTemplate() {
           <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
             <li>Analytical thinking and solving complex problems</li>
             <li>Effective communication and teamwork</li>
+            <li>Adaptability to new team environments</li>
+            <li>Collaborative problem-solving</li>
           </ul>
           <ul className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5">
             <li>Time management and meeting deadlines</li>
             <li>Self-learning and adaptation to new technologies</li>
+            <li>Mentoring and knowledge sharing</li>
+            <li>Cross-functional team collaboration</li>
           </ul>
         </div>
       </section>
