@@ -8,9 +8,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
   ],
-  experimental: {
-	optimizeUniversalDefaults: true
-  },
+//   experimental: {
+// 	optimizeUniversalDefaults: true
+//   },
   theme: {
   	extend: {
   		colors: {
