@@ -1,5 +1,5 @@
-import CVTemplate from "../cv-template"
-import type { Metadata } from "next"
+import CVTemplate from "../cv-template";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Anton Belousov - Middle Frontend Developer | CV",
@@ -16,14 +16,13 @@ export const metadata: Metadata = {
       },
     ],
   },
-  robots: "index, follow",
-}
+  robots: "NOODP",
+};
 
 export default function Home() {
   return (
     <main>
       <CVTemplate />
     </main>
-  )
+  );
 }
-

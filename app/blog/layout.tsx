@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Anton Belousov" }],
   creator: "Anton Belousov",
   publisher: "Anton Belousov",
-  robots: "index, follow",
+  robots: "NOODP",
 
   openGraph: {
     type: "website",

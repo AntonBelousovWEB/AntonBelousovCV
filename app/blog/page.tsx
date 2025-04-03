@@ -1,9 +1,10 @@
-import Link from "next/link"
-import { getAllPosts } from "@/lib/blog-utils"
-import { Metadata } from "next"
+import Link from "next/link";
+import { getAllPosts } from "@/lib/blog-utils";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Anton's Blog - Thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
+  title:
+    "Anton's Blog - Thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
   description:
     "Blog of thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
   openGraph: {
@@ -17,25 +18,31 @@ export const metadata: Metadata = {
       },
     ],
   },
-  robots: "index, follow",
-}
+  robots: "NOODP",
+};
 
 export default function BlogPage() {
-  const posts = getAllPosts()
+  const posts = getAllPosts();
 
   return (
     <div className="wrapper max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
       <header className="mb-12 md:mb-16">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 header_wrapper">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">Anton's Blog</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">
+            Anton's Blog
+          </h1>
           <nav className="flex gap-6 text-xl">
-            <Link href="/" className="text-gray-800 hover:text-blue-600 font-medium">
+            <Link
+              href="/"
+              className="text-gray-800 hover:text-blue-600 font-medium"
+            >
               CV
             </Link>
           </nav>
         </div>
         <p className="text-xl text-gray-600 mt-4">
-          Thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.
+          Thoughts, insights, and tutorials on frontend development,
+          optimization, and modern web technologies.
         </p>
       </header>
 
@@ -46,7 +53,9 @@ export default function BlogPage() {
 
         {posts.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-xl text-gray-600">No posts yet. Check back soon!</p>
+            <p className="text-xl text-gray-600">
+              No posts yet. Check back soon!
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -57,7 +66,10 @@ export default function BlogPage() {
               >
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">
-                    <Link href={`/blog/${post.slug}`} className="hover:text-blue-600">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="hover:text-blue-600"
+                    >
                       {post.title}
                     </Link>
                   </h3>
@@ -69,7 +81,10 @@ export default function BlogPage() {
                     })}
                   </div>
                   <p className="text-gray-700 mb-4">{post.excerpt}</p>
-                  <Link href={`/blog/${post.slug}`} className="inline-block text-blue-600 hover:underline font-medium">
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="inline-block text-blue-600 hover:underline font-medium"
+                  >
                     Read more →
                   </Link>
                 </div>
@@ -83,5 +98,5 @@ export default function BlogPage() {
         <p>© {new Date().getFullYear()} Anton Belousov. All rights reserved.</p>
       </footer>
     </div>
-  )
+  );
 }

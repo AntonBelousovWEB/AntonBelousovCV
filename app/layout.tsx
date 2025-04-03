@@ -1,7 +1,7 @@
-import type React from "react"
-import type { Metadata, Viewport } from "next"
-import "./globals.css"
-import { Head } from "@/components/Head"
+import type React from "react";
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+import { Head } from "@/components/Head";
 
 export const metadata: Metadata = {
   title: "Anton Belousov - Middle Frontend Developer | CV",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Anton Belousov" }],
   creator: "Anton Belousov",
   publisher: "Anton Belousov",
-  robots: "index, follow",
+  robots: "NOODP",
 
   openGraph: {
     type: "profile",
@@ -43,20 +43,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://anton-belousov-cv.vercel.app/",
   },
-}
+};
 
 export const viewport: Viewport = {
-  themeColor: '#3b82f6',
-}
+  themeColor: "#3b82f6",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <Head>
-      {children}
-    </Head>
-  )
+  return <Head>{children}</Head>;
 }
