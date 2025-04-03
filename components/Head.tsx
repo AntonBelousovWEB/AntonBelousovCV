@@ -25,7 +25,7 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
                 <meta name="msapplication-TileColor" content="#2e489f" />
                 <meta name="msapplication-TileImage" content="/img/favicons/ms-icon-144x144.png" />
 
-                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="manifest" href="/img/favicons/manifest_3.json" crossOrigin="use-credentials" />
 
                 <meta name="robots" content="max-image-preview:large" />
                 <meta name="robots" content="max-video-preview:-1" />

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/blog-utils";
-import type { Metadata } from "next";
 import BlogContent from "@/components/blog-content";
 import BlogHeader from "@/components/BlogHeader";
 
@@ -10,26 +9,6 @@ export async function generateStaticParams() {
   return posts.map((post: any) => ({
     slug: post.slug,
   }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
-
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
-
-  return {
-    title: `${post.title} | Anton Belousov's Blog`,
-    description: post.excerpt,
-  };
 }
 
 export default async function BlogPost({

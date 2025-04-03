@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function BlogHeader({
@@ -11,24 +11,35 @@ export default function BlogHeader({
   date: string;
 }) {
   const [isTitleVisible, setIsTitleVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const isAnimating = useRef(false);
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
+    lastScrollY.current = window.scrollY;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      const direction = currentScrollY > lastScrollY.current ? "down" : "up";
 
-      // Проверяем направление скролла и обновляем состояние только при изменении
-      if (currentScrollY > lastScrollY && isTitleVisible) {
-        setIsTitleVisible(false); // Скролл вниз — скрываем заголовок
-      } else if (currentScrollY < lastScrollY && !isTitleVisible) {
-        setIsTitleVisible(true); // Скролл вверх — показываем заголовок
+      if (Math.abs(currentScrollY - lastScrollY.current) > 2) {
+        if (!isAnimating.current) {
+          if (direction === "down" && isTitleVisible) {
+            setIsTitleVisible(false);
+            isAnimating.current = true;
+            setTimeout(() => (isAnimating.current = false), 300);
+          } else if (direction === "up" && !isTitleVisible) {
+            setIsTitleVisible(true);
+            isAnimating.current = true;
+            setTimeout(() => (isAnimating.current = false), 300);
+          }
+        }
       }
 
-      lastScrollY = currentScrollY;
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -60,9 +71,8 @@ export default function BlogHeader({
           </nav>
         </div>
 
-        {/* Заголовок с анимацией скрытия */}
         <div
-          className={`transition-all duration-300 overflow-hidden ${
+          className={`transition-all duration-300 ease-in-out overflow-hidden ${
             isTitleVisible ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >

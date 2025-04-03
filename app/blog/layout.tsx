@@ -1,8 +1,6 @@
-import type React from "react"
-import type { Metadata, Viewport } from "next"
-import "../globals.css"
-import { Head } from "@/components/Head"
-
+import type React from "react";
+import type { Metadata, Viewport } from "next";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Anton Belousov - Frontend Development Blog",
@@ -44,20 +42,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://anton-belousov-cv.vercel.app/blog",
   },
-}
+};
 
 export const viewport: Viewport = {
   themeColor: "#3b82f6",
-}
+};
 
 export default function BlogLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <Head>
-      {children}
-    </Head>
-  )
+  return children;
 }
