@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     type: "profile",
     url: "https://anton-belousov-cv.vercel.app",
     title: "Anton Belousov - Middle Frontend Developer",
+    locale: "en_US",
     description:
       "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
     siteName: "Anton Belousov CV",

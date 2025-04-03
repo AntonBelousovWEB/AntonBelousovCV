@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://anton-belousov-cv.vercel.app/blog",
     title: "Anton Belousov - Frontend Development Blog",
+    locale: "en_US",
     description:
       "Technical blog sharing insights and tutorials on frontend development, React, Next.js, and web optimization.",
     siteName: "Anton Belousov Blog",

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anton-belousov-cv.vercel.app/sitemap.xml

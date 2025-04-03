@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
   openGraph: {
+    locale: "en_US",
     images: [
       {
         url: "https://anton-belousov-cv.vercel.app/og-image.png",

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Blog of thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
   openGraph: {
+    locale: "en_US",
     images: [
       {
         url: "https://anton-belousov-cv.vercel.app/og-image.png",
