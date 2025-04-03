@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { getPostBySlug } from "../../../lib/blog-utils";
+import { getPostBySlug } from "@/lib/blog-utils";
 
 export async function generateMetadata({
   params,
