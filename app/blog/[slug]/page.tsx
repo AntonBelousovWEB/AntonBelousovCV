@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPostBySlug, getAllPosts } from "@/lib/blog-utils";
-import BlogContent from "@/components/blog-content";
-import BlogHeader from "@/components/BlogHeader";
+import { getPostBySlug, getAllPosts } from "../../../lib/blog-utils";
+import BlogContent from "../../../components/blog-content";
+import BlogHeader from "../../../components/BlogHeader";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();

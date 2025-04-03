@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import "./globals.css"
-import { Head } from "@/components/Head"
+import { Head } from "../components/Head"
 
 export const metadata: Metadata = {
   title: "Anton Belousov - Middle Frontend Developer | CV",
