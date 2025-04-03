@@ -8,16 +8,7 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
         <html lang="en">
             <head>
                 <meta name="google-site-verification" content="TZ6c8LDq6aa-m3AmKWJ1TAJS1n2gsudrj7CgbWP-Oqw" />
-                <meta http-equiv="Content-Security-Policy" content="
-                    default-src 'self';
-                    script-src 'self';
-                    style-src 'self' 'unsafe-inline';
-                    img-src 'self' data:;
-                    font-src 'self';
-                    connect-src 'self';
-                    frame-src 'none';
-                    object-src 'none';
-                "/>
+                <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none';"/>
 
                 <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png" />
