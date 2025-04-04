@@ -1,5 +1,4 @@
 import { personSchema } from "@/app/schema";
-import SchemaMarkup from "./SchemaMarkup";
 import { Inter } from "next/font/google"
 import { organizationSchema } from "@/app/organizationSchema";
 import { websiteSchema } from "@/app/websiteSchema";
@@ -13,6 +12,14 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
         <html lang="en">
             <head>
                 <meta name="google-site-verification" content="TZ6c8LDq6aa-m3AmKWJ1TAJS1n2gsudrj7CgbWP-Oqw" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SDC2SBMCG"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                    
+                  gtag('config', 'G-6SDC2SBMCG');
+                </script>
                 <meta 
                     http-equiv="Content-Security-Policy" 
                     content="
@@ -79,7 +86,6 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
             </head>
             <body className={inter.className}>
               {children}
-              <SchemaMarkup />
             </body>
         </html>
     )
