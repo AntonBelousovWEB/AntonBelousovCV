@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { personSchema } from "./app/schema";
+import { personSchema } from "./lib/utils/shemas/schema";
 
 export default function CVTemplate() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
-      <script type="application/ld+json">
-        {JSON.stringify(personSchema)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
 
       <header
         className="mb-12 md:mb-24"
