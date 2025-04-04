@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization. Specializing in creating high-performance and SEO optimized web applications.",
   keywords:
-    "frontend developer, frontend dev, front end, front-end developer, react developer, next.js developer, web optimization, SEO specialist, Anton Belousov, CV, resume, Ukraine developer, seo, technical, project, projects, optimization, developer, developers, code, improve, improved, improving, performance, team, teams",
+    "Anton Belousov, Anton, Belousov, frontend developer, frontend dev, front end, front-end developer, react developer, next.js developer, web optimization, SEO specialist, Anton Belousov, CV, resume, Ukraine developer, seo, technical, project, projects, optimization, developer, developers, code, improve, improved, improving, performance, team, teams",
   authors: [{ name: "Anton Belousov" }],
   creator: "Anton Belousov",
   publisher: "Anton Belousov",
