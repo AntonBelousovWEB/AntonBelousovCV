@@ -22,6 +22,7 @@ const nextConfig = {
     parallelServerCompiles: true,
     optimizeCss: true,
   },
+  poweredByHeader: false,
 }
 
 mergeConfig(nextConfig, userConfig)

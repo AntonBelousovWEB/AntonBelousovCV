@@ -43,6 +43,13 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
                     {JSON.stringify(breadcrumbSchema)}
                 </script>
 
+                <link rel="icon" sizes="16x16" href="/img/favicons/favicon-16x16.ico" type="image/x-icon" />
+                <link rel="icon" sizes="32x32" href="/img/favicons/favicon-32x32.ico" type="image/x-icon" />
+                <link rel="icon" sizes="96x96" href="/img/favicons/favicon-96x96.ico" type="image/x-icon" />
+                <link rel="shortcut icon" sizes="16x16" href="/img/favicons/favicon-16x16.ico" type="image/x-icon" />
+                <link rel="shortcut icon" sizes="32x32" href="/img/favicons/favicon-32x32.ico" type="image/x-icon" />
+                <link rel="shortcut icon" sizes="96x96" href="/img/favicons/favicon-96x96.ico" type="image/x-icon" />
+
                 <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png" />
                 <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png" />
