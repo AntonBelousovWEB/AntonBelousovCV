@@ -1,99 +1,12 @@
 import Link from "next/link";
+import { personSchema } from "./app/schema";
 
 export default function CVTemplate() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Anton Belousov",
-            jobTitle: "Middle Frontend Developer",
-            email: "polpoltrop228@gmail.com",
-            telephone: "+380663208556",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Kyiv",
-              addressCountry: "Ukraine",
-            },
-            url: "https://github.com/AntonBelousovWEB",
-            sameAs: [
-              "https://github.com/AntonBelousovWEB",
-              "https://www.linkedin.com/in/anton-belousov-1803042b1/",
-              "/blog",
-            ],
-            description:
-              "Frontend developer with experience since 2020, specializing in creating high-performance and SEO-optimized web applications.",
-            hasOccupation: {
-              "@type": "Occupation",
-              name: "Frontend Developer",
-              skills: [
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "Next.js",
-                "Redux",
-                "GraphQL",
-                "Tailwind CSS",
-                "SEO Optimization",
-                "Performance Tuning",
-              ],
-              responsibilities:
-                "Development of high-performance web applications, technical SEO optimization, code refactoring and performance improvements.",
-            },
-            workLocation: {
-              "@type": "Place",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Kyiv",
-                addressCountry: "Ukraine",
-              },
-            },
-            alumniOf: {
-              "@type": "EducationalOrganization",
-              name: "Kyiv European University",
-            },
-            knowsAbout: [
-              "Frontend Development",
-              "JavaScript Frameworks",
-              "Web Performance Optimization",
-              "Technical SEO",
-              "React Ecosystem",
-              "TypeScript",
-              "Web Accessibility",
-              "SEO",
-              "Frontend Architecture",
-              "Code Optimization",
-              "Technical Audits",
-              "User Experience Design",
-              "Agile Methodologies",
-              "Cross-Functional Collaboration",
-              "Mentorship",
-              "Front-end Development",
-              "Front dev",
-              "Frontend dev",
-              "CV",
-              "Resume",
-              "Project",
-              "Projects",
-            ],
-            knowsLanguage: [
-              {
-                "@type": "Language",
-                name: "English",
-                proficiencyLevel: "Intermediate",
-              },
-              {
-                "@type": "Language",
-                name: "Ukrainian",
-                proficiencyLevel: "Native",
-              },
-            ],
-          }),
-        }}
-      />
+      <script type="application/ld+json">
+        {JSON.stringify(personSchema)}
+      </script>
 
       <header
         className="mb-12 md:mb-24"
