@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { organizationSchema } from "@/app/organizationSchema";
 import { websiteSchema } from "@/app/websiteSchema";
 import { breadcrumbSchema } from "@/app/breadcrumbSchema";
+import { ServiceSchema } from "@/app/ServiceSchema";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,9 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
 
                 <script type="application/ld+json">
                     {JSON.stringify(personSchema)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(ServiceSchema)}
                 </script>
                 <script type="application/ld+json">
                     {JSON.stringify(organizationSchema)}
