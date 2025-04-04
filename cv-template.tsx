@@ -63,6 +63,21 @@ export default function CVTemplate() {
               "React Ecosystem",
               "TypeScript",
               "Web Accessibility",
+              "SEO",
+              "Frontend Architecture",
+              "Code Optimization",
+              "Technical Audits",
+              "User Experience Design",
+              "Agile Methodologies",
+              "Cross-Functional Collaboration",
+              "Mentorship",
+              "Front-end Development",
+              "Front dev",
+              "Frontend dev",
+              "CV",
+              "Resume",
+              "Project",
+              "Projects",
             ],
             knowsLanguage: [
               {
@@ -122,6 +137,9 @@ export default function CVTemplate() {
             <p className="mb-3">
               <strong>GitHub:</strong>{" "}
               <a
+                hrefLang="en"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://github.com/AntonBelousovWEB"
                 className="text-blue-600 hover:underline"
                 itemProp="url"
@@ -132,6 +150,9 @@ export default function CVTemplate() {
             <p className="mb-3">
               <strong>LinkedIn:</strong>{" "}
               <a
+                hrefLang="en"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/anton-belousov-1803042b1/"
                 className="text-blue-600 hover:underline"
                 itemProp="sameAs"
@@ -142,6 +163,7 @@ export default function CVTemplate() {
             <p className="mb-3">
               <strong>Blog:</strong>{" "}
               <Link
+                hrefLang="en"
                 href="/blog"
                 className="text-blue-600 hover:underline"
                 itemProp="sameAs"
@@ -634,6 +656,7 @@ export default function CVTemplate() {
           <li>Hobbies: open source, reading technical literature</li>
           <li>
             <Link
+              hrefLang="en"
               href="/blog"
               className="text-blue-600 hover:underline"
               itemProp="sameAs"

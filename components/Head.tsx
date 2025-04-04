@@ -1,5 +1,9 @@
+import { personSchema } from "@/app/schema";
 import SchemaMarkup from "./SchemaMarkup";
 import { Inter } from "next/font/google"
+import { organizationSchema } from "@/app/organizationSchema";
+import { websiteSchema } from "@/app/websiteSchema";
+import { breadcrumbSchema } from "@/app/breadcrumbSchema";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +29,19 @@ export const Head: React.FC<{ children: React.ReactNode; }> = ({ children }) => 
                       object-src 'none';
                     "
                 />
+
+                <script type="application/ld+json">
+                    {JSON.stringify(personSchema)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(organizationSchema)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(websiteSchema)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbSchema)}
+                </script>
 
                 <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png" />

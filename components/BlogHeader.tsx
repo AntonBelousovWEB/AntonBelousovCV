@@ -50,6 +50,7 @@ export default function BlogHeader({
       <header>
         <div className="pt-2 flex justify-between items-center mb-6">
           <Link
+            hrefLang="en"
             href="/blog"
             className="text-blue-600 hover:underline flex items-center gap-2"
           >
@@ -57,12 +58,14 @@ export default function BlogHeader({
           </Link>
           <nav className="flex gap-6 text-xl">
             <Link
+              hrefLang="en"
               href="/"
               className="text-gray-800 hover:text-blue-600 font-medium"
             >
               CV
             </Link>
             <Link
+              hrefLang="en"
               href="/blog"
               className="text-gray-800 hover:text-blue-600 font-medium"
             >

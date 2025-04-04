@@ -33,6 +33,7 @@ export default function BlogPage() {
           </h1>
           <nav className="flex gap-6 text-xl">
             <Link
+              hrefLang="en"
               href="/"
               className="text-gray-800 hover:text-blue-600 font-medium"
             >
@@ -67,6 +68,7 @@ export default function BlogPage() {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">
                     <Link
+                      hrefLang="en"
                       href={`/blog/${post.slug}`}
                       className="hover:text-blue-600"
                     >
@@ -82,6 +84,7 @@ export default function BlogPage() {
                   </div>
                   <p className="text-gray-700 mb-4">{post.excerpt}</p>
                   <Link
+                    hrefLang="en"
                     href={`/blog/${post.slug}`}
                     className="inline-block text-blue-600 hover:underline font-medium"
                   >
