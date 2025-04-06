@@ -166,8 +166,6 @@ export const Head: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           crossOrigin="use-credentials"
         />
 
-        <meta property="og:site_name" content="Anton Belousov" />
-
         <meta name="robots" content="NOODP" />
         <meta name="robots" content="max-image-preview:large" />
         <meta name="robots" content="max-video-preview:-1" />
