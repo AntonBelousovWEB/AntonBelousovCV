@@ -1,7 +1,7 @@
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Anton Belousov - Middle Frontend Developer | CV | React, Next.js & SEO expert",
+  "name": "Anton Belousov - Strong Middle Frontend Developer | CV | React, Next.js & SEO expert",
   "url": "https://anton-belousov-cv.vercel.app",
   "description": "Portfolio and CV of Anton Belousov — a frontend developer specializing in React, Next.js, and SEO. Learn more about skills, experience, and contact options.",
   "publisher": {

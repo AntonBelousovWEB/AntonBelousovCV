@@ -4,9 +4,9 @@ import "./globals.css";
 import { Head } from "@/components/seo/Head";
 
 export const metadata: Metadata = {
-  title: "Anton Belousov - Middle Frontend Developer | CV",
+  title: "Anton Belousov - Strong Middle Frontend Developer | CV",
   description:
-    "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization. Specializing in creating high-performance and SEO optimized web applications.",
+    "Professional CV of Anton Belousov, a Strong Middle Frontend Developer with expertise in React, Next.js, and performance optimization. Specializing in creating high-performance and SEO optimized web applications.",
   keywords:
     "Anton Belousov, Anton, Belousov, frontend developer, frontend dev, front end, front-end developer, react developer, next.js developer, web optimization, SEO specialist, Anton Belousov, CV, resume, Ukraine developer, seo, technical, project, projects, optimization, developer, developers, code, improve, improved, improving, performance, team, teams",
   authors: [{ name: "Anton Belousov" }],
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     url: "https://anton-belousov-cv.vercel.app",
-    title: "Anton Belousov - Middle Frontend Developer",
+    title: "Anton Belousov - Strong Middle Frontend Developer",
     locale: "en_US",
     description:
-      "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
+      "Professional CV of Anton Belousov, a Strong Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
     siteName: "Anton Belousov CV",
     images: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Anton Belousov - Middle Frontend Developer",
+    title: "Anton Belousov - Strong Middle Frontend Developer",
     description:
-      "Professional CV of Anton Belousov, a Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
+      "Professional CV of Anton Belousov, a Strong Middle Frontend Developer with expertise in React, Next.js, and performance optimization.",
     images: ["https://anton-belousov-cv.vercel.app/og-image.png"],
   },
 

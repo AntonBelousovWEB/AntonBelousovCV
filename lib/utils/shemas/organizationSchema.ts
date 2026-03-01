@@ -1,7 +1,7 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Anton Belousov - Middle Frontend Developer | CV | React, Next.js & SEO expert",
+  "name": "Anton Belousov - Strong Middle Frontend Developer | CV | React, Next.js & SEO expert",
   "url": "https://anton-belousov-cv.vercel.app",
   "logo": "https://anton-belousov-cv.vercel.app/img/favicons/android-icon-144x144.png",
   "description": "Personal portfolio and CV website of Anton Belousov — a frontend developer specializing in React, Next.js, and SEO optimization.",
@@ -35,7 +35,7 @@ export const organizationSchema = {
   "founder": {
     "@type": "Person",
     "name": "Anton Belousov",
-    "jobTitle": "Middle Frontend Developer",
+    "jobTitle": "Strong Middle Frontend Developer",
     "url": "https://github.com/AntonBelousovWEB",
     "sameAs": [
       "https://github.com/AntonBelousovWEB",

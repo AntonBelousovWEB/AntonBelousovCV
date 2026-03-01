@@ -7,7 +7,7 @@ export const ServiceSchema = {
     "provider": {
       "@type": "Person",
       "name": "Anton Belousov",
-      "jobTitle": "Middle Frontend Developer",
+      "jobTitle": "Strong Middle Frontend Developer (React, Next.js, TypeScript)",
       "email": "polpoltrop228@gmail.com",
       "telephone": "+380663208556",
       "url": "https://github.com/AntonBelousovWEB",
@@ -16,7 +16,7 @@ export const ServiceSchema = {
         "https://www.linkedin.com/in/anton-belousov-1803042b1/",
         "https://antonbelousovweb.com/blog"
       ],
-      "description": "Frontend developer with experience since 2020, specializing in creating high-performance and SEO-optimized web applications.",
+      "description": "Frontend Developer with 5+ years building scalable React/Next.js apps. Performance (Core Web Vitals 90+), technical SEO, FSD architecture. Leads frontend teams.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Kyiv",
@@ -27,9 +27,8 @@ export const ServiceSchema = {
         "name": "Frontend Developer",
         "responsibilities": "Development of high-performance web applications, technical SEO optimization, code refactoring, and performance improvements.",
         "skills": [
-          "JavaScript", "TypeScript", "React", "Next.js", "Redux", "GraphQL", "Tailwind CSS",
-          "SEO Optimization", "Performance Tuning", "Apollo Client", "React Query", "TanStack Query",
-          "Material UI", "Ant Design", "Webpack", "Vite", "Babel", "ESLint", "Prettier", "Git", "Figma"
+          "React", "Next.js", "TypeScript", "JavaScript", "Redux", "GraphQL", "REST API",
+          "FSD", "Core Web Vitals", "Technical SEO", "Webpack", "Vite", "Git", "CI/CD", "Jest"
         ]
       },
       "alumniOf": {
@@ -40,7 +39,7 @@ export const ServiceSchema = {
         {
           "@type": "Language",
           "name": "English",
-          "proficiencyLevel": "Intermediate"
+          "proficiencyLevel": "B1/B2"
         },
         {
           "@type": "Language",
