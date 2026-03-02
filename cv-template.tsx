@@ -12,11 +12,14 @@ export default function CVTemplate() {
         itemType="https://schema.org/Person"
       >
         <h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-1"
           itemProp="name"
         >
           Anton Belousov
         </h1>
+        <p className="text-base sm:text-lg text-gray-500 mb-2">
+          Web Development • tech.SEO • System Design • Mentoring
+        </p>
         <h2
           className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 mb-2"
           itemProp="jobTitle"
@@ -414,6 +417,7 @@ export default function CVTemplate() {
             >
               <li>React, Next.js, TypeScript, JavaScript (ES6+)</li>
               <li>Redux / RTK, GraphQL, REST API</li>
+              <li>WebGL, GLSL</li>
             </ul>
           </div>
 
@@ -455,6 +459,7 @@ export default function CVTemplate() {
             >
               <li>Webpack, Vite, Git, CI/CD, GitHub Actions, Vercel</li>
               <li>Jest, React Testing Library</li>
+              <li>Service Worker, Web Worker</li>
             </ul>
           </div>
         </div>

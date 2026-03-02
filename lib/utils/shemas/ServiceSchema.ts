@@ -28,7 +28,8 @@ export const ServiceSchema = {
         "responsibilities": "Development of high-performance web applications, technical SEO optimization, code refactoring, and performance improvements.",
         "skills": [
           "React", "Next.js", "TypeScript", "JavaScript", "Redux", "GraphQL", "REST API",
-          "FSD", "Core Web Vitals", "Technical SEO", "Webpack", "Vite", "Git", "CI/CD", "Jest"
+          "WebGL", "GLSL", "Service Worker", "Web Worker", "FSD", "Core Web Vitals",
+          "Technical SEO", "System Design", "Webpack", "Vite", "Git", "CI/CD", "Jest"
         ]
       },
       "alumniOf": {
