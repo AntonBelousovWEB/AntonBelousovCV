@@ -367,6 +367,52 @@ export default function CVTemplate() {
               className="text-xl sm:text-2xl lg:text-3xl font-semibold"
               itemProp="roleName"
             >
+              Career Break — Frontend Growth & Technical SEO
+            </h4>
+            <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+              <meta itemProp="startDate" content="2023-08" />
+              August 2023 — <meta itemProp="endDate" content="2024-04" />
+              April 2024
+            </span>
+          </div>
+          <h5
+            className="text-gray-700 italic mb-3 md:mb-5"
+            itemProp="worksFor"
+            itemScope
+            itemType="https://schema.org/Organization"
+          >
+            <span itemProp="name">Independent professional development</span>
+          </h5>
+          <ul
+            className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
+            itemProp="responsibilities"
+          >
+            <li>
+              Deepened frontend performance expertise through code optimization,
+              bottleneck analysis, and JavaScript runtime improvements
+            </li>
+            <li>
+              Practiced technical SEO audits with Lighthouse and PageSpeed
+              Insights, focusing on indexing, metadata, accessibility, and
+              structured data
+            </li>
+            <li>
+              Strengthened a performance- and SEO-first engineering mindset for
+              building cleaner, faster, and more maintainable applications
+            </li>
+          </ul>
+        </div>
+
+        <div
+          className="mb-8 md:mb-12"
+          itemScope
+          itemType="https://schema.org/OrganizationRole"
+        >
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2 md:mb-4">
+            <h4
+              className="text-xl sm:text-2xl lg:text-3xl font-semibold"
+              itemProp="roleName"
+            >
               Junior Frontend Developer
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
