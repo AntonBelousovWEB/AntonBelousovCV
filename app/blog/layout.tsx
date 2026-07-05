@@ -3,27 +3,36 @@ import type { Metadata, Viewport } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Anton Belousov - Frontend Development Blog",
+  title: "Frontend Development Blog",
   description:
-    "Technical blog by Anton Belousov, sharing insights, tutorials, and best practices on frontend development, React, Next.js, performance optimization, and modern web technologies.",
-  keywords:
-    "frontend blog, react tutorials, next.js tips, web optimization, SEO techniques, Anton Belousov, frontend development, javascript blog, web performance",
+    "Technical articles by Anton Belousov about frontend development, React, Next.js, performance optimization, technical SEO, and modern web architecture.",
+  keywords: [
+    "frontend development blog",
+    "React articles",
+    "Next.js articles",
+    "technical SEO",
+    "web performance",
+    "Anton Belousov",
+  ],
   authors: [{ name: "Anton Belousov" }],
   creator: "Anton Belousov",
   publisher: "Anton Belousov",
-  robots: "NOODP",
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   openGraph: {
     type: "website",
-    url: "https://anton-belousov-cv.vercel.app/blog",
-    title: "Anton Belousov - Frontend Development Blog",
+    url: "/blog",
+    title: "Frontend Development Blog | Anton Belousov",
     locale: "en_US",
     description:
-      "Technical blog sharing insights and tutorials on frontend development, React, Next.js, and web optimization.",
+      "Articles about frontend development, React, Next.js, web performance, and technical SEO.",
     siteName: "Anton Belousov Blog",
     images: [
       {
-        url: "https://anton-belousov-cv.vercel.app/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Anton Belousov - Frontend Development Blog",
@@ -33,14 +42,14 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Anton Belousov - Frontend Development Blog",
+    title: "Frontend Development Blog | Anton Belousov",
     description:
-      "Technical blog sharing insights and tutorials on frontend development, React, Next.js, and web optimization.",
-    images: ["https://anton-belousov-cv.vercel.app/og-image.png"],
+      "Articles about frontend development, React, Next.js, web performance, and technical SEO.",
+    images: ["/og-image.png"],
   },
 
   alternates: {
-    canonical: "https://anton-belousov-cv.vercel.app/blog",
+    canonical: "/blog",
   },
 };
 

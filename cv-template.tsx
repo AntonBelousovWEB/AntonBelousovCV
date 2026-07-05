@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { personSchema } from "./lib/utils/shemas/schema";
 
 export default function CVTemplate() {
   return (
     <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
-      <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
-
       <header
         className="mb-12 md:mb-24"
         itemScope
@@ -104,7 +101,7 @@ export default function CVTemplate() {
           architecture (FSD). Delivered measurable results including 40–60% load
           time reduction and 30–50% PageSpeed improvements. Experience in
           refactoring legacy systems, building projects from scratch, API
-          integration (REST / GraphQL), and leading frontend teams (5
+          integration (REST / GraphQL - Apollo Client), and leading frontend teams (5
           developers). Focus: clean architecture, measurable impact,
           business-oriented frontend engineering.
         </p>
@@ -125,6 +122,58 @@ export default function CVTemplate() {
               className="text-xl sm:text-2xl lg:text-3xl font-semibold"
               itemProp="roleName"
             >
+              Strong Middle JavaScript Developer
+            </h4>
+            <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+              <meta itemProp="startDate" content="2026-03" />
+              March 2026 — <meta itemProp="endDate" content="2026-08" />
+              August 2026
+            </span>
+          </div>
+          <h5
+            className="text-gray-700 italic mb-3 md:mb-5"
+            itemProp="worksFor"
+            itemScope
+            itemType="https://schema.org/Organization"
+          >
+            <span itemProp="name">24 Play LLC</span>
+          </h5>
+          <ul
+            className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
+            itemProp="responsibilities"
+          >
+            <li>
+              Worked on interactive product interfaces with a strong focus on
+              Three.js, WebGL, GLSL shaders, and browser rendering performance
+            </li>
+            <li>
+              Optimized JavaScript execution paths, rendering logic, and asset
+              loading to support stable product behavior across desktop and
+              mobile devices
+            </li>
+            <li>
+              Improved adaptive layouts for graphics-heavy and interaction-heavy
+              screens, balancing visual quality, responsiveness, and runtime
+              performance
+            </li>
+            <li>
+              Strengthened low-level frontend expertise by working closer to the
+              browser rendering pipeline, GPU-accelerated UI, and performance
+              constraints of real user devices
+            </li>
+          </ul>
+        </div>
+
+        <div
+          className="mb-8 md:mb-12"
+          itemScope
+          itemType="https://schema.org/OrganizationRole"
+        >
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2 md:mb-4">
+            <h4
+              className="text-xl sm:text-2xl lg:text-3xl font-semibold"
+              itemProp="roleName"
+            >
               Frontend Team Lead
             </h4>
             <span
@@ -132,8 +181,8 @@ export default function CVTemplate() {
               itemProp="startDate"
               content="2025-07"
             >
-              July 2025 — <meta itemProp="endDate" content="present" />
-              Present
+              July 2025 — <meta itemProp="endDate" content="2026-07" />
+              July 2026
             </span>
           </div>
           <h5
@@ -416,8 +465,8 @@ export default function CVTemplate() {
               itemProp="knowsAbout"
             >
               <li>React, Next.js, TypeScript, JavaScript (ES6+)</li>
-              <li>Redux / RTK, GraphQL, REST API</li>
-              <li>WebGL, GLSL</li>
+              <li>Redux / RTK, GraphQL - Apollo Client, REST API</li>
+              <li>Three.js, WebGL, GLSL shaders</li>
             </ul>
           </div>
 
@@ -445,7 +494,7 @@ export default function CVTemplate() {
             >
               <li>Core Web Vitals, Lighthouse, PageSpeed Insights</li>
               <li>Technical SEO, Schema.org</li>
-              <li>Code splitting, lazy loading, caching</li>
+              <li>JavaScript runtime optimization, code splitting, caching</li>
             </ul>
           </div>
 

@@ -1,11 +1,9 @@
 import { personSchema } from "@/lib/utils/shemas/schema";
 import { Inter } from "next/font/google";
-import { organizationSchema } from "@/lib/utils/shemas/organizationSchema";
 import { websiteSchema } from "@/lib/utils/shemas/websiteSchema";
-import { breadcrumbSchema } from "@/lib/utils/shemas/breadcrumbSchema";
 import { ServiceSchema } from "@/lib/utils/shemas/ServiceSchema";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const Head: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -15,37 +13,15 @@ export const Head: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           name="google-site-verification"
           content="TZ6c8LDq6aa-m3AmKWJ1TAJS1n2gsudrj7CgbWP-Oqw"
         />
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="
-            default-src 'self' vercel.app;
-            script-src 'self' 'unsafe-inline' 'unsafe-eval' vercel.app;
-            style-src 'self' 'unsafe-inline';
-            img-src 'self' data: blob: vercel.app;
-            font-src 'self';
-            connect-src 'self' vercel.app;
-            frame-src 'none';
-            worker-src 'self' blob:;
-            media-src 'self';
-            base-uri 'self';
-            form-action 'self';
-            object-src 'none';"
-        />
 
-        <script type="application/ld+json">
+        <script id="person-json-ld" type="application/ld+json">
           {JSON.stringify(personSchema)}
         </script>
-        <script type="application/ld+json">
+        <script id="service-json-ld" type="application/ld+json">
           {JSON.stringify(ServiceSchema)}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify(organizationSchema)}
-        </script>
-        <script type="application/ld+json">
+        <script id="website-json-ld" type="application/ld+json">
           {JSON.stringify(websiteSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
         </script>
 
         <link
@@ -165,11 +141,6 @@ export const Head: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           href="/img/favicons/manifest_3.json"
           crossOrigin="use-credentials"
         />
-
-        <meta name="robots" content="NOODP" />
-        <meta name="robots" content="max-image-preview:large" />
-        <meta name="robots" content="max-video-preview:-1" />
-        <meta name="robots" content="max-snippet:22200020" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

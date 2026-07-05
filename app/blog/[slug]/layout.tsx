@@ -11,8 +11,12 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Post Not Found | Anton Belousov's Blog",
+      title: "Post Not Found",
       description: "The requested blog post could not be found.",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
@@ -20,9 +24,13 @@ export async function generateMetadata({
   const url = `${baseUrl}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | Anton Belousov's Blog`,
+    title: `${post.title} | Anton Belousov`,
     description: post.excerpt,
     authors: [{ name: "Anton Belousov", url: baseUrl }],
+    robots: {
+      index: true,
+      follow: true,
+    },
     openGraph: {
       type: "article",
       url,
@@ -32,7 +40,7 @@ export async function generateMetadata({
       authors: ["Anton Belousov"],
       images: [
         {
-          url: `${baseUrl}/og-image.png`,
+          url: "/og-image.png",
           width: 1200,
           height: 630,
           alt: post.title,
@@ -43,7 +51,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [`${baseUrl}/og-image.png`],
+      images: ["/og-image.png"],
     },
     alternates: {
       canonical: url,

@@ -4,6 +4,20 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+function createPostSlug(fileName: string): string {
+  return fileName.replace(/\.md$/, '').toLowerCase();
+}
+
+function findPostFileBySlug(slug: string): string | null {
+  const normalizedSlug = slug.toLowerCase();
+  const fileNames = fs.readdirSync(postsDirectory);
+
+  return (
+    fileNames.find((fileName) => createPostSlug(fileName) === normalizedSlug) ??
+    null
+  );
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -18,7 +32,7 @@ export function getAllPosts(): Post[] {
   const allPostsData = fileNames
     .filter(fileName => fileName.endsWith('.md'))
     .map(fileName => {
-      const slug = fileName.replace(/\.md$/, '');
+      const slug = createPostSlug(fileName);
       
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -45,13 +59,19 @@ export function getAllPosts(): Post[] {
 
 export function getPostBySlug(slug: string): Post | null {
   try {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
+    const fileName = findPostFileBySlug(slug);
+
+    if (!fileName) {
+      return null;
+    }
+
+    const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     
     const matterResult = matter(fileContents);
     
     return {
-      slug,
+      slug: createPostSlug(fileName),
       title: matterResult.data.title,
       date: matterResult.data.date,
       excerpt: matterResult.data.excerpt,
@@ -79,4 +99,3 @@ export function deletePost(slug: string): void {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   fs.unlinkSync(fullPath);
 }
-

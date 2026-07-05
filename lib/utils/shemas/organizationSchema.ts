@@ -1,46 +1,49 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Anton Belousov - Strong Middle Frontend Developer | CV | React, Next.js & SEO expert",
-  "url": "https://anton-belousov-cv.vercel.app",
-  "logo": "https://anton-belousov-cv.vercel.app/img/favicons/android-icon-144x144.png",
-  "description": "Personal portfolio and CV website of Anton Belousov — a frontend developer specializing in React, Next.js, and SEO optimization.",
-  "sameAs": [
+  "@type": "ProfessionalService",
+  "@id": "https://anton-belousov-cv.vercel.app/#professional-service",
+  name: "Anton Belousov Frontend Development",
+  url: "https://anton-belousov-cv.vercel.app",
+  logo: "https://anton-belousov-cv.vercel.app/img/favicons/android-icon-144x144.png",
+  description:
+    "Independent frontend development, technical SEO, and web performance services by Anton Belousov.",
+  sameAs: [
     "https://github.com/AntonBelousovWEB",
     "https://www.linkedin.com/in/anton-belousov-1803042b1/",
-    "https://anton-belousov-cv.vercel.app/blog"
+    "https://anton-belousov-cv.vercel.app/blog",
   ],
-  "contactPoint": {
+  contactPoint: {
     "@type": "ContactPoint",
-    "contactType": "Customer Support",
-    "email": "polpoltrop228@gmail.com",
-    "telephone": "+380663208556",
-    "areaServed": ["UA", "EU", "US"],
-    "availableLanguage": [
+    contactType: "Professional inquiries",
+    email: "polpoltrop228@gmail.com",
+    telephone: "+380663208556",
+    areaServed: ["UA", "EU", "US"],
+    availableLanguage: [
       {
         "@type": "Language",
-        "name": "English"
+        name: "English",
       },
       {
         "@type": "Language",
-        "name": "Ukrainian"
-      }
-    ]
+        name: "Ukrainian",
+      },
+    ],
   },
-  "address": {
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Kyiv",
-    "addressCountry": "Ukraine"
+    addressLocality: "Kyiv",
+    addressCountry: "Ukraine",
   },
-  "founder": {
+  founder: {
     "@type": "Person",
-    "name": "Anton Belousov",
-    "jobTitle": "Strong Middle Frontend Developer",
-    "url": "https://github.com/AntonBelousovWEB",
-    "sameAs": [
+    "@id": "https://anton-belousov-cv.vercel.app/#person",
+    name: "Anton Belousov",
+    jobTitle: "Strong Middle Frontend Developer",
+    url: "https://anton-belousov-cv.vercel.app",
+    sameAs: [
       "https://github.com/AntonBelousovWEB",
       "https://www.linkedin.com/in/anton-belousov-1803042b1/",
-      "https://anton-belousov-cv.vercel.app/blog"
-    ]
-  }
+      "https://anton-belousov-cv.vercel.app/blog",
+    ],
+  },
 };

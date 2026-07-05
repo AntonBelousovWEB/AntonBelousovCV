@@ -1,25 +1,5 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog-utils";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title:
-    "Anton's Blog - Thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
-  description:
-    "Blog of thoughts, insights, and tutorials on frontend development, optimization, and modern web technologies.",
-  openGraph: {
-    locale: "en_US",
-    images: [
-      {
-        url: "https://anton-belousov-cv.vercel.app/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Anton Belousov - Anton's Blog",
-      },
-    ],
-  },
-  robots: "NOODP",
-};
 
 export default function BlogPage() {
   const posts = getAllPosts();
