@@ -10,7 +10,7 @@ export const ServiceSchema = {
     "@type": "Person",
     "@id": "https://anton-belousov-cv.vercel.app/#person",
     name: "Anton Belousov",
-    jobTitle: "Strong Middle Frontend Developer (React, Next.js, TypeScript)",
+    jobTitle: "Senior Frontend Engineer",
     email: "polpoltrop228@gmail.com",
     telephone: "+380663208556",
     url: "https://anton-belousov-cv.vercel.app",

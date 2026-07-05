@@ -38,7 +38,7 @@ export const organizationSchema = {
     "@type": "Person",
     "@id": "https://anton-belousov-cv.vercel.app/#person",
     name: "Anton Belousov",
-    jobTitle: "Strong Middle Frontend Developer",
+    jobTitle: "Senior Frontend Engineer",
     url: "https://anton-belousov-cv.vercel.app",
     sameAs: [
       "https://github.com/AntonBelousovWEB",

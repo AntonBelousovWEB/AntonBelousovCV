@@ -21,7 +21,7 @@ export default function CVTemplate() {
           className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 mb-2"
           itemProp="jobTitle"
         >
-          Strong Middle Frontend Developer (React, Next.js, TypeScript)
+          Senior Frontend Engineer
         </h2>
         <p className="text-lg sm:text-xl text-gray-500 mb-6 md:mb-12">
           Performance & Technical SEO | Scalable Architecture | 5+ years
@@ -95,16 +95,48 @@ export default function CVTemplate() {
           Professional Summary
         </h3>
         <p className="text-justify leading-relaxed" itemProp="description">
-          Frontend Developer with 5+ years of commercial experience building
-          scalable React / Next.js applications. Specialized in performance
-          optimization (Core Web Vitals 90+), technical SEO, and frontend
-          architecture (FSD). Delivered measurable results including 40–60% load
-          time reduction and 30–50% PageSpeed improvements. Experience in
-          refactoring legacy systems, building projects from scratch, API
-          integration (REST / GraphQL - Apollo Client), and leading frontend teams (5
-          developers). Focus: clean architecture, measurable impact,
-          business-oriented frontend engineering.
+          Senior Frontend Engineer with 5+ years of experience building
+          production React, Next.js, and TypeScript applications with a strong
+          focus on performance, technical SEO, and scalable frontend
+          architecture. Led a 5-person frontend team, built products from
+          scratch, refactored legacy systems, and delivered measurable
+          improvements: Core Web Vitals 90+, 30–50% PageSpeed growth, and
+          40–60% load-time reduction. Recent work includes Three.js/WebGL
+          interfaces, GLSL shaders, JavaScript runtime optimization, and
+          adaptive UI for graphics-heavy products across desktop and mobile
+          devices.
         </p>
+      </section>
+
+      <section className="mb-12 md:mb-24">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-4 md:mb-8">
+          Impact Highlights
+        </h3>
+        <ul
+          className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-4"
+          itemProp="description"
+        >
+          <li>
+            Led a frontend team of 5 engineers: code review, sprint planning,
+            architecture decisions, and delivery quality
+          </li>
+          <li>
+            Improved Core Web Vitals to 90+ and raised PageSpeed scores by
+            30–50% through rendering, loading, and SEO optimization
+          </li>
+          <li>
+            Reduced page load time by 40–60% using caching, code splitting, lazy
+            loading, and legacy code refactoring
+          </li>
+          <li>
+            Built SEO-ready React/Next.js products from scratch with SSR,
+            metadata, Schema.org, and production deployment
+          </li>
+          <li>
+            Developed performance-sensitive Three.js/WebGL interfaces with GLSL
+            shaders and adaptive layouts for cross-device stability
+          </li>
+        </ul>
       </section>
 
       <section className="mb-12 md:mb-24">
@@ -122,12 +154,12 @@ export default function CVTemplate() {
               className="text-xl sm:text-2xl lg:text-3xl font-semibold"
               itemProp="roleName"
             >
-              Strong Middle JavaScript Developer
+              Senior JavaScript / Frontend Engineer
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
               <meta itemProp="startDate" content="2026-03" />
-              March 2026 — <meta itemProp="endDate" content="2026-08" />
-              August 2026
+              March 2026 — <meta itemProp="endDate" content="present" />
+              Present
             </span>
           </div>
           <h5
@@ -143,23 +175,24 @@ export default function CVTemplate() {
             itemProp="responsibilities"
           >
             <li>
-              Worked on interactive product interfaces with a strong focus on
-              Three.js, WebGL, GLSL shaders, and browser rendering performance
+              Developed interactive product interfaces using Three.js, WebGL,
+              and GLSL shaders, focusing on rendering stability, visual quality,
+              and browser performance
             </li>
             <li>
               Optimized JavaScript execution paths, rendering logic, and asset
-              loading to support stable product behavior across desktop and
-              mobile devices
+              loading for graphics-heavy screens across desktop and mobile
+              devices
             </li>
             <li>
-              Improved adaptive layouts for graphics-heavy and interaction-heavy
-              screens, balancing visual quality, responsiveness, and runtime
-              performance
+              Improved adaptive layouts for interaction-heavy UI, ensuring
+              consistent behavior across different viewport sizes, device
+              capabilities, and input types
             </li>
             <li>
-              Strengthened low-level frontend expertise by working closer to the
-              browser rendering pipeline, GPU-accelerated UI, and performance
-              constraints of real user devices
+              Worked close to the browser rendering pipeline, GPU-accelerated
+              UI, and real-device performance constraints to keep products
+              responsive under load
             </li>
           </ul>
         </div>
@@ -198,20 +231,26 @@ export default function CVTemplate() {
             itemProp="responsibilities"
           >
             <li>
-              Leading team of 5 frontend engineers (code review, sprint
-              planning, architecture decisions)
+              Led a team of 5 frontend engineers, owning code review, sprint
+              planning, technical decisions, and frontend delivery quality
             </li>
             <li>
-              Designed modular architecture for multi-module Web3 trading
-              platform (React, Vite, TypeScript)
-            </li>
-            <li>Implemented core trading UI features</li>
-            <li>
-              Standardized development processes (ESLint, code guidelines, PR
-              review workflow)
+              Designed modular React/Vite/TypeScript architecture for a
+              multi-module Web3 trading platform, separating shared UI, business
+              logic, and feature modules
             </li>
             <li>
-              Reduced technical debt via refactoring legacy modules
+              Delivered core trading interface flows with a focus on responsive
+              UX, maintainability, and predictable state management
+            </li>
+            <li>
+              Standardized frontend processes: ESLint rules, code guidelines,
+              PR review workflow, and reusable development patterns
+            </li>
+            <li>
+              Reduced technical debt by refactoring legacy modules and improving
+              component boundaries, making the codebase easier to extend and
+              onboard into
             </li>
           </ul>
         </div>
@@ -250,13 +289,24 @@ export default function CVTemplate() {
             itemProp="responsibilities"
           >
             <li>
-              Built frontend from scratch using React, Next.js, Tailwind
+              Built a production frontend from scratch using React, Next.js, and
+              Tailwind, covering page structure, reusable components, routing,
+              and deployment readiness
             </li>
             <li>
-              Implemented technical SEO (meta tags, Schema.org, SSR)
+              Implemented technical SEO foundation: SSR-friendly pages,
+              metadata, canonical URLs, Schema.org structured data, and
+              crawlable content architecture
             </li>
             <li>
-              Improved Core Web Vitals to 90+
+              Improved Core Web Vitals to 90+ through rendering optimization,
+              code splitting, asset loading improvements, and layout stability
+              fixes
+            </li>
+            <li>
+              Created responsive UI flows aligned with product requirements
+              while keeping the codebase maintainable for future feature
+              development
             </li>
           </ul>
         </div>
@@ -294,17 +344,20 @@ export default function CVTemplate() {
             itemProp="responsibilities"
           >
             <li>
-              Developed complex UI modules (dynamic forms, tables, maps) using
-              React & TypeScript
+              Developed complex React/TypeScript UI modules: dynamic forms, data
+              tables, maps, booking flows, and reusable interface components
             </li>
             <li>
-              Reduced page load time by 40% via caching and code splitting
+              Reduced page load time by 40% through caching, code splitting,
+              bundle optimization, and lazy loading
             </li>
             <li>
-              Refactored legacy codebase and improved maintainability
+              Refactored legacy frontend modules, improving maintainability,
+              readability, and feature delivery speed
             </li>
             <li>
-              Conducted SEO optimization (Lighthouse, PageSpeed, Schema.org)
+              Conducted technical SEO and performance improvements using
+              Lighthouse, PageSpeed Insights, Core Web Vitals, and Schema.org
             </li>
           </ul>
         </div>
@@ -408,7 +461,10 @@ export default function CVTemplate() {
             <li>Developed internal student system using React</li>
             <li>Built modular frontend structure and implemented core UI logic</li>
             <li>Integrated frontend with backend API</li>
-            <li>Delivered production-ready solution independently</li>
+            <li>
+              Delivered production-ready solution independently, owning the
+              frontend architecture from implementation to deployment readiness
+            </li>
           </ul>
         </div>
 
@@ -436,51 +492,35 @@ export default function CVTemplate() {
 
       <section className="mb-12 md:mb-24">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-4 md:mb-8">
-          Achievements
-        </h3>
-        <ul
-          className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-4"
-          itemProp="description"
-        >
-          <li>Developed custom FSD-based architecture for scalable frontends</li>
-          <li>Mentored 2 junior developers</li>
-          <li>
-            Contributed to legacy-to-modern architecture migration
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-12 md:mb-24">
-        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-4 md:mb-8">
           Technical Skills
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           <div>
             <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">
-              Core
+              Frontend
             </h4>
             <ul
               className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
               itemProp="knowsAbout"
             >
-              <li>React, Next.js, TypeScript, JavaScript (ES6+)</li>
-              <li>Redux / RTK, GraphQL - Apollo Client, REST API</li>
-              <li>Three.js, WebGL, GLSL shaders</li>
+              <li>JavaScript ES6+, TypeScript, React, Next.js, Vite</li>
+              <li>Tailwind CSS, HTML5, CSS3, responsive UI</li>
+              <li>Three.js, WebGL, GLSL shaders, graphics-heavy UI</li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">
-              Architecture
+              State & Data
             </h4>
             <ul
               className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
               itemProp="knowsAbout"
             >
-              <li>Feature-Sliced Design (FSD)</li>
-              <li>Modular architecture, code refactoring</li>
-              <li>Scalable frontend systems</li>
+              <li>Redux Toolkit, Apollo Client, GraphQL, REST API</li>
+              <li>Authentication flows, API integration, data-heavy UI</li>
+              <li>Reusable components and predictable state management</li>
             </ul>
           </div>
 
@@ -493,22 +533,25 @@ export default function CVTemplate() {
               itemProp="knowsAbout"
             >
               <li>Core Web Vitals, Lighthouse, PageSpeed Insights</li>
-              <li>Technical SEO, Schema.org</li>
-              <li>JavaScript runtime optimization, code splitting, caching</li>
+              <li>Technical SEO, SSR/SSG, Schema.org, canonical URLs</li>
+              <li>
+                JavaScript runtime optimization, rendering optimization, code
+                splitting, lazy loading, caching
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">
-              Tooling
+              Architecture & Leadership
             </h4>
             <ul
               className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
               itemProp="knowsAbout"
             >
-              <li>Webpack, Vite, Git, CI/CD, GitHub Actions, Vercel</li>
-              <li>Jest, React Testing Library</li>
-              <li>Service Worker, Web Worker</li>
+              <li>Feature-Sliced Design, modular architecture, refactoring</li>
+              <li>Code review, mentoring, sprint planning, delivery ownership</li>
+              <li>Git, CI/CD, GitHub Actions, Vercel, Jest, RTL</li>
             </ul>
           </div>
         </div>

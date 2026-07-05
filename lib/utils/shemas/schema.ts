@@ -3,7 +3,7 @@ export const personSchema = {
   "@type": "Person",
   "@id": "https://anton-belousov-cv.vercel.app/#person",
   name: "Anton Belousov",
-  jobTitle: "Strong Middle Frontend Developer (React, Next.js, TypeScript)",
+  jobTitle: "Senior Frontend Engineer",
   email: "polpoltrop228@gmail.com",
   telephone: "+380663208556",
   address: {
@@ -18,10 +18,10 @@ export const personSchema = {
     "https://anton-belousov-cv.vercel.app/blog",
   ],
   description:
-    "Frontend Developer with 5+ years building scalable React/Next.js apps. Performance (Core Web Vitals 90+), technical SEO, WebGL/Three.js, FSD architecture. 40-60% load time reduction, 30-50% PageSpeed improvements. Leads frontend teams.",
+    "Senior Frontend Engineer with 5+ years building scalable React/Next.js apps. Performance (Core Web Vitals 90+), technical SEO, WebGL/Three.js, FSD architecture. 40-60% load time reduction, 30-50% PageSpeed improvements. Leads frontend teams.",
   hasOccupation: {
     "@type": "Occupation",
-    name: "Frontend Developer",
+    name: "Senior Frontend Engineer",
     skills: [
       "React",
       "Next.js",
@@ -96,6 +96,8 @@ export const personSchema = {
     "Adaptive Layouts",
     "System Design",
     "Frontend Architecture",
+    "Team Leadership",
+    "Mentoring",
     "Code Refactoring",
     "Webpack",
     "Vite",
@@ -103,7 +105,7 @@ export const personSchema = {
     "CI/CD",
     "Jest",
     "Anton Belousov",
-    "Frontend Developer",
+    "Senior Frontend Engineer",
     "Ukraine",
   ],
   knowsLanguage: [

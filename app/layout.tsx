@@ -8,11 +8,11 @@ const siteUrl = "https://anton-belousov-cv.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Anton Belousov - Frontend Developer CV",
+    default: "Anton Belousov - Senior Frontend Engineer CV",
     template: "%s | Anton Belousov",
   },
   description:
-    "Frontend developer CV for Anton Belousov, a React, Next.js, and TypeScript engineer focused on performance, technical SEO, architecture, and team leadership.",
+    "Senior Frontend Engineer CV for Anton Belousov, a React, Next.js, TypeScript, WebGL, and technical SEO engineer focused on performance, architecture, and team leadership.",
   keywords: [
     "Anton Belousov",
     "frontend developer",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     url: siteUrl,
-    title: "Anton Belousov - Frontend Developer CV",
+    title: "Anton Belousov - Senior Frontend Engineer CV",
     locale: "en_US",
     description:
       "React, Next.js, and TypeScript frontend developer focused on performance, technical SEO, architecture, and team leadership.",
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Anton Belousov - Frontend Developer",
+        alt: "Anton Belousov - Senior Frontend Engineer",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Anton Belousov - Frontend Developer CV",
+    title: "Anton Belousov - Senior Frontend Engineer CV",
     description:
       "React, Next.js, and TypeScript frontend developer focused on performance, technical SEO, architecture, and team leadership.",
     images: ["/og-image.png"],
