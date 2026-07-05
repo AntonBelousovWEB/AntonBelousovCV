@@ -154,12 +154,12 @@ export default function CVTemplate() {
               className="text-xl sm:text-2xl lg:text-3xl font-semibold"
               itemProp="roleName"
             >
-              Senior JavaScript / Frontend Engineer
+              Senior JavaScript Engineer
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
               <meta itemProp="startDate" content="2026-03" />
-              March 2026 — <meta itemProp="endDate" content="present" />
-              Present
+              March 2026 — <meta itemProp="endDate" content="2026-08" />
+              August 2026
             </span>
           </div>
           <h5
@@ -210,13 +210,10 @@ export default function CVTemplate() {
               Frontend Team Lead
             </h4>
             <span
-              className="text-gray-600 text-lg md:text-xl lg:text-2xl"
-              itemProp="startDate"
-              content="2025-07"
-            >
+              className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+              <meta itemProp="startDate" content="2025-07" />
               July 2025 — <meta itemProp="endDate" content="2026-07" />
-              July 2026
-            </span>
+              July 2026</span>
           </div>
           <h5
             className="text-gray-700 italic mb-3 md:mb-5"
@@ -268,10 +265,8 @@ export default function CVTemplate() {
               Middle Frontend Developer
             </h4>
             <span
-              className="text-gray-600 text-lg md:text-xl lg:text-2xl"
-              itemProp="startDate"
-              content="2025-02"
-            >
+              className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+              <meta itemProp="startDate" content="2025-02" />
               February 2025 — <meta itemProp="endDate" content="2025-10" />
               October 2025
             </span>
@@ -324,9 +319,9 @@ export default function CVTemplate() {
               Middle Frontend Developer
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
-              <meta itemProp="startDate" content="2024-01" />
-              January 2024 — <meta itemProp="endDate" content="2025-01" />
-              January 2025
+              <meta itemProp="startDate" content="2024-03" />
+              March 2024 — <meta itemProp="endDate" content="2025-02" />
+              February 2025
             </span>
           </div>
           <h5
@@ -375,7 +370,9 @@ export default function CVTemplate() {
               Junior Frontend Developer
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
-              ~6 months
+              <meta itemProp="startDate" content="2023-01" />
+              January 2023 — <meta itemProp="endDate" content="2023-07" />
+              July 2023
             </span>
           </div>
           <h5
@@ -413,8 +410,8 @@ export default function CVTemplate() {
             </h4>
             <span className="text-gray-600 text-lg md:text-xl lg:text-2xl">
               <meta itemProp="startDate" content="2020-10" />
-              October 2020 — <meta itemProp="endDate" content="2021-10" />
-              October 2021
+              October 2020 — <meta itemProp="endDate" content="2022-07" />
+              July 2022
             </span>
           </div>
           <ul
