@@ -95,16 +95,14 @@ export default function CVTemplate() {
           Professional Summary
         </h3>
         <p className="text-justify leading-relaxed" itemProp="description">
-          Senior Frontend Engineer with 5+ years of experience building
-          production React, Next.js, and TypeScript applications with a strong
-          focus on performance, technical SEO, and scalable frontend
-          architecture. Led a 5-person frontend team, built products from
-          scratch, refactored legacy systems, and delivered measurable
-          improvements: Core Web Vitals 90+, 30–50% PageSpeed growth, and
-          40–60% load-time reduction. Recent work includes Three.js/WebGL
-          interfaces, GLSL shaders, JavaScript runtime optimization, and
-          adaptive UI for graphics-heavy products across desktop and mobile
-          devices.
+          Senior Frontend Developer with 5+ years of commercial experience building production React, Next.js and TypeScript applications. Strong focus on scalable frontend architecture, performance optimization, code quality, refactoring and technical delivery. Experienced in building products from scratch, improving legacy codebases, working with REST API, optimizing Core Web Vitals, and leading frontend delivery through code review, sprint planning and mentoring.
+        </p>
+        <p className="text-justify leading-relaxed mt-4">
+          I also bring a strong AI-native approach to software engineering: I actively
+          use AI to accelerate problem-solving, validate technical decisions, explore
+          alternatives, and improve the quality of implementation. My focus is not only
+          on using AI tools, but on building a more efficient engineering process around
+          them.
         </p>
       </section>
 
@@ -576,10 +574,33 @@ export default function CVTemplate() {
               itemProp="knowsAbout"
             >
               <li>Core Web Vitals, Lighthouse, PageSpeed Insights</li>
-              <li>Technical SEO, SSR/SSG, Schema.org, canonical URLs</li>
+              <li>Technical SEO, SSR/SSG, Schema.org, DataForSeo, setting MCP for AI-Agents, canonical URLs</li>
               <li>
                 JavaScript runtime optimization, rendering optimization, code
                 splitting, lazy loading, caching
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-3 md:mb-5 text-xl sm:text-2xl lg:text-3xl">
+              AI Workflow & Agents
+            </h4>
+            <ul
+              className="list-disc pl-5 md:pl-8 space-y-3 md:space-y-5"
+              itemProp="knowsAbout"
+            >
+              <li>
+                Advanced usage of AI tools, coding agents, and agent-based development
+                workflows
+              </li>
+              <li>
+                MCP servers, custom plugins, skills, codebase memory, and contextual
+                knowledge management
+              </li>
+              <li>
+                Token-efficient agent workflows, prompt optimization, task decomposition,
+                and AI-assisted delivery
               </li>
             </ul>
           </div>
@@ -623,6 +644,7 @@ export default function CVTemplate() {
               Technical blog
             </Link>
           </li>
+          <li>I have an unreasonable love for donuts 🍩</li>
         </ul>
       </section>
 
