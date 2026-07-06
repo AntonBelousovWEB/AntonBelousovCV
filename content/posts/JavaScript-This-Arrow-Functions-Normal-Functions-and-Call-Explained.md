@@ -1,6 +1,6 @@
 ---
 title: "JavaScript this Explained: Arrow Functions, Normal Functions, and call()"
-date: 2026-07-06
+date: 2026-07-05
 excerpt: "A practical explanation of JavaScript this binding, arrow functions, normal functions, dot notation, strict mode, and call()."
 ---
 
