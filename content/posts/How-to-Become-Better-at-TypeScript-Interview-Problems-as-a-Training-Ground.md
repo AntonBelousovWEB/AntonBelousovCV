@@ -125,6 +125,20 @@ If you want to improve, use interview problems as deliberate practice:
 
 The last step is underrated. Library types show real trade-offs: compatibility, inference quality, public API stability, and developer experience.
 
+## Senior TypeScript Interview Problems to Practice
+
+A good senior TypeScript interview problem should test modeling, not trivia.
+
+Try these:
+
+1. Convert an optional-heavy `User` type into a discriminated union and explain which invalid states disappeared.
+2. Write a `pickByKind()` helper that preserves the exact union member type.
+3. Model an API response as `unknown`, validate it at the boundary, and expose a safe domain type.
+4. Refactor a generic helper that loses inference into one that preserves input information.
+5. Design a form state type where `submitting`, `success`, and `error` cannot be true at the same time.
+
+The answer matters less than the reasoning. Senior TypeScript is the ability to choose where strictness pays for itself and where it only slows the team down.
+
 ## Conclusion
 
 TypeScript mastery is not about turning every file into a type-level challenge. It is about making illegal states harder to express and legal states easier to work with.

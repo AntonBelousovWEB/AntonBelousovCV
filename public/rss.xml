@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Anton Belousov Blog</title>
+<link>https://anton-belousov-cv.vercel.app/blog</link>
+<description>Senior frontend engineering notes on React, architecture, TypeScript, performance, and technical SEO.</description>
+<item>
+  <title>Kanban Board Architecture: Normalized Data, Domain Boundaries, and Drag-and-Drop</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/kanban-board-architecture-normalized-data-domain-boundaries-and-dnd</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/kanban-board-architecture-normalized-data-domain-boundaries-and-dnd</guid>
+  <description>How to design a kanban board frontend with normalized data, drag-and-drop, modal workflows, domain boundaries, and state that can survive growing complexity.</description>
+  <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Model-View Patterns for React Developers: MVC, MVP, MVVM, and ViewModel</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</guid>
+  <description>A senior-friendly explanation of MVC, MVP, MVVM, and ViewModel thinking for React developers who want clearer frontend architecture.</description>
+  <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React Internationalization Without Pain: Designing i18n as Architecture</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/react-internationalization-without-pain-designing-i18n-as-architecture</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/react-internationalization-without-pain-designing-i18n-as-architecture</guid>
+  <description>A senior frontend approach to React internationalization, locale routing, translation keys, formatting, and why i18n should be treated as architecture.</description>
+  <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>How Business Priorities Are Killing Web Performance</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/how-business-priorities-are-shaping-modern-development</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/how-business-priorities-are-shaping-modern-development</guid>
+  <description>An exploration of how business decisions and modern development tools are creating a cycle that prioritizes development speed over application performance, and what we can do to find a better balance.</description>
+  <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React Forms with React Hook Form and Zod: A Senior-Friendly Approach</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/react-forms-with-react-hook-form-and-zod-a-senior-friendly-approach</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/react-forms-with-react-hook-form-and-zod-a-senior-friendly-approach</guid>
+  <description>A practical senior frontend guide to React forms using React Hook Form and Zod, with validation boundaries, UX states, and maintainable form architecture.</description>
+  <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Frontend Infrastructure: Modal Managers, Feature Flags, Themes, and Provider Composition</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/frontend-infrastructure-modal-managers-feature-flags-themes-and-provider-composition</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/frontend-infrastructure-modal-managers-feature-flags-themes-and-provider-composition</guid>
+  <description>A practical guide to frontend infrastructure code: modal managers, feature flags, themes, provider composition, and keeping cross-cutting concerns boring.</description>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Frontend Architecture Fundamentals: SOLID Without Dogma</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</guid>
+  <description>A practical frontend architecture article on using SOLID principles in React without turning them into rigid rules or over-engineered ceremony.</description>
+  <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Mental Model Behind Reactivity: Observers, Signals, and Frontend State</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</guid>
+  <description>A senior frontend perspective on reactivity, observer patterns, signals, and why state management becomes easier when you understand the dependency graph underneath.</description>
+  <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Main Architecture Mistake in React Projects</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/the-main-architecture-mistake-in-react-projects</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/the-main-architecture-mistake-in-react-projects</guid>
+  <description>The biggest React architecture mistake is not choosing the wrong library. It is mixing responsibilities until components, state, and business logic lose clear ownership.</description>
+  <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ViewModel in Frontend: Facade, Mediator, MobX, and React</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/viewmodel-in-frontend-facade-mediator-mobx-and-react</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/viewmodel-in-frontend-facade-mediator-mobx-and-react</guid>
+  <description>A practical explanation of the ViewModel pattern in frontend architecture, how it differs from a store, and how Facade and Mediator ideas fit React apps.</description>
+  <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Dependency Inversion in React: Composition Root, DI, and Service Boundaries</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</guid>
+  <description>How to use dependency inversion, dependency injection, composition roots, React context, and service boundaries in frontend architecture without over-engineering.</description>
+  <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Scaling Frontend Architecture When Product Complexity Grows</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/scaling-frontend-architecture-when-product-complexity-grows</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/scaling-frontend-architecture-when-product-complexity-grows</guid>
+  <description>How to scale frontend architecture as a product grows: boundaries, feature ownership, state placement, dependency direction, and practical refactoring signals.</description>
+  <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>How to Become Better at TypeScript: Interview Problems as a Training Ground</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/how-to-become-better-at-typescript-interview-problems-as-a-training-ground</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/how-to-become-better-at-typescript-interview-problems-as-a-training-ground</guid>
+  <description>A senior frontend guide to improving TypeScript skills through interview-style problems, type modeling, generics, inference, and practical codebase decisions.</description>
+  <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Reusable React Components: Slots, Render Props, and Composition Over Flags</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/reusable-react-components-slots-render-props-and-composition-over-flags</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/reusable-react-components-slots-render-props-and-composition-over-flags</guid>
+  <description>How to design reusable React components with slots, render props, and composition instead of prop flags that turn components into product-specific switchboards.</description>
+  <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>JavaScript this Explained: Arrow Functions, Normal Functions, and call()</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/javascript-this-arrow-functions-normal-functions-and-call-explained</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/javascript-this-arrow-functions-normal-functions-and-call-explained</guid>
+  <description>A practical explanation of JavaScript this binding, arrow functions, normal functions, dot notation, strict mode, and call().</description>
+  <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why Zustand Feels Simple: The Store Pattern Behind Modern React State</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/why-zustand-feels-simple-the-store-pattern-behind-modern-react-state</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/why-zustand-feels-simple-the-store-pattern-behind-modern-react-state</guid>
+  <description>Why Zustand feels simple, what its store pattern teaches about React state management, and how senior developers decide when global state is actually justified.</description>
+  <pubDate>Sun, 04 Jan 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Frontend Developer in 2026: Grow Beyond Form Building</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/frontend-developer-in-2026-grow-beyond-form-building</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/frontend-developer-in-2026-grow-beyond-form-building</guid>
+  <description>Frontend development in 2026 demands more than building forms. Senior growth means architecture, performance, accessibility, product thinking, and system design.</description>
+  <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The FSD Mistake That Breaks Most Projects</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/the-fsd-mistake-that-breaks-most-projects</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/the-fsd-mistake-that-breaks-most-projects</guid>
+  <description>The most common Feature-Sliced Design mistake is copying folders without respecting dependency rules, ownership, and the real direction of product change.</description>
+  <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Cost of Abstract Interfaces in Frontend Architecture</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/the-cost-of-abstract-interfaces-in-frontend-architecture</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/the-cost-of-abstract-interfaces-in-frontend-architecture</guid>
+  <description>A senior frontend look at the cost of abstract interfaces, when dependency inversion helps, and when a concrete API client is simpler and better.</description>
+  <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>State Management Is Business Logic Placement, Not a Library Choice</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/state-management-is-business-logic-placement</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/state-management-is-business-logic-placement</guid>
+  <description>A senior frontend guide to state management as a question of business logic placement, state ownership, derived data, and library trade-offs.</description>
+  <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>What a Real Senior Frontend Task Actually Tests</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</guid>
+  <description>Senior frontend tasks are not about syntax tricks. They test judgment, trade-offs, maintainability, product thinking, and the ability to reduce ambiguity.</description>
+  <pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>JavaScript Proxy Explained Through Real Two-Way Binding</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/javascript-proxy-explained-through-real-two-way-binding</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/javascript-proxy-explained-through-real-two-way-binding</guid>
+  <description>A practical explanation of JavaScript Proxy, two-way binding, and the architectural trade-offs behind intercepting reads and writes in frontend applications.</description>
+  <pubDate>Mon, 26 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why Your React Components Are Impossible to Read</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/why-your-react-components-are-impossible-to-read</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/why-your-react-components-are-impossible-to-read</guid>
+  <description>React components become unreadable when they mix responsibilities, hide business rules in JSX, overuse hooks, and fail to separate data, behavior, and presentation.</description>
+  <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Optimistic Updates, Event Sourcing, and Undo/Redo in Frontend Apps</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/optimistic-updates-event-sourcing-and-undo-redo-in-frontend-apps</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/optimistic-updates-event-sourcing-and-undo-redo-in-frontend-apps</guid>
+  <description>How to design optimistic updates, event sourcing, undo/redo, and perceived performance in complex frontend applications without lying to the user.</description>
+  <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>I Shipped v1 of My Own Frontend Starter Template</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/i-shipped-v1-of-my-own-frontend-starter-template</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/i-shipped-v1-of-my-own-frontend-starter-template</guid>
+  <description>A React + Vite starter with SSR, route auto-discovery, DI, Reatom, Mantine, Playwright smoke tests, and a removable example module. Here is what it includes and why each piece matters.</description>
+  <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why Frontend Developers Should Keep Growing Even When Forms Pay the Bills</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/why-frontend-developers-should-keep-growing-even-when-forms-pay-the-bills</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/why-frontend-developers-should-keep-growing-even-when-forms-pay-the-bills</guid>
+  <description>A practical reflection on frontend career growth, why comfortable implementation work can become a trap, and how developers can grow without chasing hype.</description>
+  <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Fail Fast Frontend Error Handling Without Confusing Users</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/fail-fast-frontend-error-handling-without-confusing-users</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/fail-fast-frontend-error-handling-without-confusing-users</guid>
+  <description>How to design frontend error handling with fail-fast boundaries, synchronous and asynchronous errors, recovery paths, and user-facing clarity.</description>
+  <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Architecture Beats Stack: Refactoring React Without Switching Libraries</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/architecture-beats-stack-refactoring-react-without-switching-libraries</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/architecture-beats-stack-refactoring-react-without-switching-libraries</guid>
+  <description>Why frontend architecture matters more than library choice, and how to refactor React applications by moving business logic, not chasing a new stack.</description>
+  <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why Good SEO Is About Empathy</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/why-good-seo-is-about-empathy</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/why-good-seo-is-about-empathy</guid>
+  <description>SEO isn't just about keywords and rankings — it's about understanding human intent. Here's why real SEO starts with empathy.</description>
+  <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

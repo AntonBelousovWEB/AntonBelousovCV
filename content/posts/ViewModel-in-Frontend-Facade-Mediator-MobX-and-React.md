@@ -188,6 +188,20 @@ The limitation is reuse outside React. If the logic should be testable or usable
 
 Again, choose based on pressure.
 
+## React ViewModel Pattern in Practice
+
+The React ViewModel pattern is most useful when a screen has more behavior than a component should own:
+
+1. Mapping API data into view-ready state.
+2. Combining permissions, feature flags, and loading states.
+3. Coordinating form state, validation, and submit effects.
+4. Turning domain events into UI decisions.
+5. Keeping JSX mostly declarative.
+
+The ViewModel does not have to be a class. A hook can be a ViewModel if it provides a stable boundary between rendering and orchestration.
+
+The smell to watch for is simple: if a component reads like a workflow script instead of a view, a ViewModel boundary is probably missing.
+
 ## Conclusion
 
 ViewModel is useful because it gives presentation orchestration a name and a boundary.

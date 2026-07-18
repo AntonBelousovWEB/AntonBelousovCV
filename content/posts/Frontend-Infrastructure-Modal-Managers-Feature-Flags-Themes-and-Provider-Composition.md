@@ -196,6 +196,21 @@ const modal = useModal();
 
 Small APIs are easier to replace.
 
+## Frontend Feature Flags in React
+
+Frontend feature flags are useful, but they are easy to misuse.
+
+A good React feature flag setup answers four questions:
+
+1. Who owns the flag?
+2. Is the flag evaluated on the client, server, or both?
+3. What is the kill switch path if production breaks?
+4. When will the flag be removed?
+
+Client-side flags are good for UI exposure, gradual rollout, and experiments. They are not security boundaries. If a capability must be protected, the backend still needs to enforce it.
+
+The healthiest feature flags are temporary. Every long-lived flag becomes another branch the team has to reason about, test, and eventually debug.
+
 ## Conclusion
 
 Frontend infrastructure should make product code simpler, not turn the app into a private framework.

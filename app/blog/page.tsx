@@ -1,31 +1,102 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog-utils";
+import { blogTopics, getAllPosts } from "@/lib/blog-utils";
+
+const baseUrl = "https://anton-belousov-cv.vercel.app";
 
 export default function BlogPage() {
   const posts = getAllPosts();
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${baseUrl}/blog#collection`,
+    url: `${baseUrl}/blog`,
+    name: "Anton Belousov Frontend Engineering Blog",
+    description:
+      "Technical articles by Anton Belousov about JavaScript, React, Next.js, TypeScript, frontend architecture, technical SEO, and web performance.",
+    inLanguage: "en",
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+    },
+    about: {
+      "@type": "Person",
+      "@id": `${baseUrl}/#person`,
+      name: "Anton Belousov",
+      jobTitle: "Senior Frontend Engineer",
+    },
+    mainEntity: {
+      "@type": "Blog",
+      "@id": `${baseUrl}/blog#blog`,
+      name: "Anton Belousov Frontend Engineering Blog",
+      author: {
+        "@type": "Person",
+        "@id": `${baseUrl}/#person`,
+      },
+      blogPost: posts.map((post) => ({
+        "@type": "BlogPosting",
+        headline: post.title,
+        url: `${baseUrl}/blog/${post.slug}`,
+        datePublished: post.date,
+        description: post.excerpt,
+      })),
+    },
+  };
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${baseUrl}/blog#posts`,
+    itemListElement: posts.map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${baseUrl}/blog/${post.slug}`,
+      name: post.title,
+    })),
+  };
 
   return (
-    <div className="wrapper max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
-      <header className="mb-12 md:mb-16">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 header_wrapper">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">
-            Anton's Blog
-          </h1>
-          <nav className="flex gap-6 text-xl">
+    <>
+      <script type="application/ld+json">{JSON.stringify(blogSchema)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(itemListSchema)}
+      </script>
+      <div className="wrapper max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
+        <header className="mb-12 md:mb-16">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 header_wrapper">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2">
+              Anton's Blog
+            </h1>
+            <nav className="flex gap-6 text-xl">
+              <Link
+                hrefLang="en"
+                href="/"
+                className="text-gray-800 hover:text-blue-600 font-medium"
+              >
+                CV
+              </Link>
+            </nav>
+          </div>
+          <p className="text-xl text-gray-600 mt-4">
+            Thoughts, insights, and tutorials on frontend development,
+            optimization, and modern web technologies.
+          </p>
+        </header>
+
+      <section className="mb-12 md:mb-24">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-8">
+          Topics
+        </h2>
+        <div className="flex flex-wrap gap-3">
+          {blogTopics.map((topic) => (
             <Link
-              hrefLang="en"
-              href="/"
-              className="text-gray-800 hover:text-blue-600 font-medium"
+              key={topic.slug}
+              href={`/blog/topics/${topic.slug}`}
+              className="rounded-full border border-gray-300 px-4 py-2 text-base text-gray-700 hover:border-blue-500 hover:text-blue-600"
             >
-              CV
+              {topic.title}
             </Link>
-          </nav>
+          ))}
         </div>
-        <p className="text-xl text-gray-600 mt-4">
-          Thoughts, insights, and tutorials on frontend development,
-          optimization, and modern web technologies.
-        </p>
-      </header>
+      </section>
 
       <section className="main mb-12 md:mb-24">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-8">
@@ -77,9 +148,10 @@ export default function BlogPage() {
         )}
       </section>
 
-      <footer className="mt-16 pt-8 border-t border-gray-300 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} Anton Belousov. All rights reserved.</p>
-      </footer>
-    </div>
+        <footer className="mt-16 pt-8 border-t border-gray-300 text-center text-gray-600">
+          <p>© {new Date().getFullYear()} Anton Belousov. All rights reserved.</p>
+        </footer>
+      </div>
+    </>
   );
 }

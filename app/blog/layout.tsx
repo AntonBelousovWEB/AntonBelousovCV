@@ -3,13 +3,18 @@ import type { Metadata, Viewport } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Frontend Development Blog",
+  title: "Anton Belousov Frontend Engineering Blog",
   description:
-    "Technical articles by Anton Belousov about frontend development, React, Next.js, performance optimization, technical SEO, and modern web architecture.",
+    "Senior frontend engineering articles by Anton Belousov about JavaScript, React, Next.js, TypeScript, performance optimization, technical SEO, and modern web architecture.",
   keywords: [
+    "Anton Belousov blog",
+    "Anton Belousov frontend",
+    "Anton Belousov JavaScript",
     "frontend development blog",
+    "senior frontend engineering",
     "React articles",
     "Next.js articles",
+    "TypeScript articles",
     "technical SEO",
     "web performance",
     "Anton Belousov",
@@ -25,10 +30,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/blog",
-    title: "Frontend Development Blog | Anton Belousov",
+    title: "Anton Belousov Frontend Engineering Blog",
     locale: "en_US",
     description:
-      "Articles about frontend development, React, Next.js, web performance, and technical SEO.",
+      "Articles by Anton Belousov about senior frontend development, JavaScript, React, Next.js, TypeScript, web performance, and technical SEO.",
     siteName: "Anton Belousov Blog",
     images: [
       {
@@ -42,9 +47,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Frontend Development Blog | Anton Belousov",
+    title: "Anton Belousov Frontend Engineering Blog",
     description:
-      "Articles about frontend development, React, Next.js, web performance, and technical SEO.",
+      "Senior frontend engineering articles about JavaScript, React, Next.js, TypeScript, web performance, and technical SEO.",
     images: ["/og-image.png"],
   },
 

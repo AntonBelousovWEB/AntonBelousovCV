@@ -141,6 +141,12 @@ export const Head: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           href="/img/favicons/manifest_3.json"
           crossOrigin="use-credentials"
         />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Anton Belousov Blog"
+          href="/rss.xml"
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -185,6 +185,22 @@ Use the principles when they solve a real problem:
 
 You do not need an interface for every function. You do not need a folder for every principle. You need names for boundaries that are already hurting.
 
+## Frontend Architecture Patterns in React
+
+React architecture patterns are not a checklist of names. They are decisions about where change is allowed to happen.
+
+The useful questions are:
+
+1. Where does rendering stop and orchestration begin?
+2. Where do product rules live?
+3. Where are API and storage details hidden?
+4. Which modules are allowed to import each other?
+5. What can be replaced without rewriting the feature?
+
+Patterns like Container/Presentational, ViewModel, Facade, Repository, Composition Root, and Feature-Sliced Design are only useful when they answer those questions.
+
+The senior move is not to use every pattern. It is to pick the smallest boundary that prevents the next predictable change from damaging the whole feature.
+
 ## Conclusion
 
 SOLID in frontend architecture is not about importing backend ceremony into React. It is about learning to see responsibility, substitution, extension, and dependency direction.

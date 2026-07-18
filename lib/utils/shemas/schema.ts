@@ -3,6 +3,11 @@ export const personSchema = {
   "@type": "Person",
   "@id": "https://anton-belousov-cv.vercel.app/#person",
   name: "Anton Belousov",
+  alternateName: [
+    "Anton Belousov Senior Frontend Engineer",
+    "Anton Belousov JavaScript Developer",
+    "Anton Belousov React Developer",
+  ],
   jobTitle: "Senior Frontend Engineer",
   email: "polpoltrop228@gmail.com",
   telephone: "+380663208556",
@@ -12,6 +17,9 @@ export const personSchema = {
     addressCountry: "Ukraine",
   },
   url: "https://anton-belousov-cv.vercel.app",
+  mainEntityOfPage: "https://anton-belousov-cv.vercel.app/",
+  disambiguatingDescription:
+    "Anton Belousov is a Senior JavaScript and Frontend Developer from Kyiv, Ukraine, focused on React, Next.js, TypeScript, technical SEO, Core Web Vitals, and frontend architecture.",
   sameAs: [
     "https://github.com/AntonBelousovWEB",
     "https://www.linkedin.com/in/anton-belousov-1803042b1/",
@@ -74,9 +82,14 @@ export const personSchema = {
   },
   knowsAbout: [
     "React",
+    "React Developer",
     "Next.js",
+    "Next.js Developer",
     "TypeScript",
+    "TypeScript Developer",
     "JavaScript",
+    "Senior JavaScript Developer",
+    "Senior Frontend Developer",
     "Redux",
     "GraphQL",
     "Apollo Client",

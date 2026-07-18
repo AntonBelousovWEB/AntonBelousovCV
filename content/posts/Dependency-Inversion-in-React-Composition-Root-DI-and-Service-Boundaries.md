@@ -191,6 +191,20 @@ Over-abstracted frontend code is expensive. Every interface asks the next develo
 
 The lazy senior rule: invert only where the dependency is already creating change pressure.
 
+## React Dependency Injection Without Containers
+
+Most React dependency injection does not need a library. The practical version is smaller:
+
+1. Put object creation near the app boundary.
+2. Pass feature dependencies through props when the path is short.
+3. Use context when a whole subtree needs the same capability.
+4. Keep infrastructure behind named services or repositories.
+5. Use test doubles at the same boundary the production app uses.
+
+This gives you the important part of DI: the feature can ask for a capability without knowing the concrete transport, cache, storage, analytics client, or state manager.
+
+A container becomes useful only when dependency assembly itself is the problem. For most React apps, composition root plus scoped context is enough.
+
 ## Conclusion
 
 Dependency inversion in React is not about containers, decorators, or enterprise ceremony. It is about protecting features from infrastructure details.

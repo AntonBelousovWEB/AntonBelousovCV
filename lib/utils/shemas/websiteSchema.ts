@@ -3,9 +3,10 @@ export const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://anton-belousov-cv.vercel.app/#website",
   name: "Anton Belousov CV",
+  alternateName: "Anton Belousov Senior Frontend Developer Portfolio",
   url: "https://anton-belousov-cv.vercel.app",
   description:
-    "Portfolio and CV of Anton Belousov, a frontend developer specializing in React, Next.js, TypeScript, technical SEO, and performance optimization.",
+    "Portfolio, CV, and technical blog of Anton Belousov, a Senior JavaScript and Frontend Developer specializing in React, Next.js, TypeScript, technical SEO, frontend architecture, and performance optimization.",
   publisher: {
     "@type": "Person",
     "@id": "https://anton-belousov-cv.vercel.app/#person",
@@ -18,6 +19,10 @@ export const websiteSchema = {
     ],
   },
   inLanguage: "en",
+  about: {
+    "@type": "Person",
+    "@id": "https://anton-belousov-cv.vercel.app/#person",
+  },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://anton-belousov-cv.vercel.app"
