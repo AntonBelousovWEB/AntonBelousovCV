@@ -14,6 +14,18 @@ The danger is that infrastructure code tends to grow quietly. A small helper bec
 
 Good frontend infrastructure should be boring, explicit, and hard to misuse.
 
+## Frontend Infrastructure in One Paragraph
+
+Frontend infrastructure is the shared code that makes product features possible without becoming product logic itself. Modal managers, feature flags, themes, providers, HTTP clients, and error boundaries should reduce repeated decisions, not create a private framework. The best infrastructure has clear ownership, small APIs, predictable scope, and a removal path for temporary complexity.
+
+## Frontend vs Backend Feature Flags
+
+| Flag location | Good for | Not good for |
+| --- | --- | --- |
+| Frontend flag | UI rollout, experiments, progressive exposure, kill switches for visible features | Security, permission enforcement, protecting paid capabilities |
+| Backend flag | Access control, data behavior, API capability rollout, server-side experiments | Purely visual changes that do not need server enforcement |
+| Shared flag | End-to-end rollout where UI and API must move together | Casual experiments without ownership |
+
 ## Modal Managers
 
 Modals look like UI, but modal orchestration is infrastructure.
@@ -210,6 +222,19 @@ A good React feature flag setup answers four questions:
 Client-side flags are good for UI exposure, gradual rollout, and experiments. They are not security boundaries. If a capability must be protected, the backend still needs to enforce it.
 
 The healthiest feature flags are temporary. Every long-lived flag becomes another branch the team has to reason about, test, and eventually debug.
+
+For the broader frontend delivery and architecture context, see the [Senior Frontend Developer topic hub](/blog/topics/senior-frontend-developer).
+
+## Production Checklist
+
+Before adding frontend infrastructure:
+
+1. Is this repeated across multiple features?
+2. Is the public API smaller than the implementation?
+3. Is the scope app-wide, route-wide, feature-wide, or local?
+4. Who owns cleanup?
+5. What happens when the dependency fails?
+6. Can feature code use it without knowing internals?
 
 ## Conclusion
 

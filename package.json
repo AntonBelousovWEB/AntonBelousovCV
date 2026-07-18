@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-rss.mjs",
     "build": "next build",
     "start": "next start",
+    "indexnow": "node scripts/submit-indexnow.mjs",
     "lint": "next lint"
   },
   "dependencies": {

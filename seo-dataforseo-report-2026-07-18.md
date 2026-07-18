@@ -77,6 +77,9 @@ Market checked: Google US, English, desktop, depth 10.
   - `/blog/topics/technical-seo`
 - Added topic hubs to `/sitemap.xml` with higher priority than regular posts.
 - Added compact internal topic links from `/blog` to the new hubs.
+- Expanded topic hubs into real landing pages with answer blocks, coverage sections, related topic links, visible FAQ, and FAQPage schema.
+- Added IndexNow key file and `npm run indexnow` submission script for post-deploy URL notification.
+- Reduced blog post JavaScript payload from about `263 kB / 367 kB First Load JS` to `974 B / 104 kB First Load JS` by removing client-side syntax highlighting.
 
 ## Next Free SEO Moves
 

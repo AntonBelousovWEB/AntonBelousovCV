@@ -1,7 +1,4 @@
-"use client"
 import ReactMarkdown from "react-markdown"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 interface BlogContentProps {
   content: string
@@ -22,12 +19,17 @@ export default function BlogContent({ content }: BlogContentProps) {
         blockquote: (props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
           <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4" {...props} />
         ),
+        pre: (props: React.HTMLAttributes<HTMLPreElement>) => (
+          <pre
+            className="my-4 overflow-x-auto rounded-md bg-gray-950 p-4 text-sm text-gray-100"
+            {...props}
+          />
+        ),
         code: ({ node, inline, className, children, ...props }: { node?: any; inline?: boolean; className?: string; children?: React.ReactNode; [key: string]: any }) => {
-          const match = /language-(\w+)/.exec(className || "")
-          return !inline && match ? (
-            <SyntaxHighlighter style={atomDark} language={match[1]} PreTag="div" className="rounded-md my-4" {...props}>
+          return !inline ? (
+            <code className={className} {...props}>
               {String(children).replace(/\n$/, "")}
-            </SyntaxHighlighter>
+            </code>
           ) : (
             <code className="bg-gray-100 px-1 py-0.5 rounded text-red-600 font-mono text-sm" {...props}>
               {children}
@@ -43,4 +45,3 @@ export default function BlogContent({ content }: BlogContentProps) {
     </ReactMarkdown>
   )
 }
-

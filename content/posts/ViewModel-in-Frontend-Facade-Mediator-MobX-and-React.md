@@ -14,6 +14,19 @@ A ViewModel is a presentation-facing model. It prepares state and actions for a 
 
 The value is not the name. The value is giving screen logic a home outside JSX.
 
+## React ViewModel Pattern in One Paragraph
+
+The React ViewModel pattern moves presentation orchestration out of JSX and into a boundary shaped around what the view needs. A ViewModel can be a hook, factory, class, MobX object, Zustand selector layer, or plain function. The important part is responsibility: components render, while the ViewModel prepares state, commands, permissions, validation, and workflow decisions.
+
+## Hook vs Class vs MobX ViewModel
+
+| Shape | Best for | Trade-off |
+| --- | --- | --- |
+| Hook ViewModel | React-only screens and simple lifecycle binding | Harder to reuse outside React |
+| Plain object or factory | Testable orchestration and framework-light logic | Needs explicit lifecycle decisions |
+| Class ViewModel | Repeated lifecycle, commands, or observable state | Can become ceremony if there is only one implementation |
+| MobX ViewModel | Rich derived state and observable workflows | Adds library semantics the team must understand |
+
 ## ViewModel Is Not Just a Store
 
 A store usually holds state and exposes ways to update it.
@@ -201,6 +214,20 @@ The React ViewModel pattern is most useful when a screen has more behavior than 
 The ViewModel does not have to be a class. A hook can be a ViewModel if it provides a stable boundary between rendering and orchestration.
 
 The smell to watch for is simple: if a component reads like a workflow script instead of a view, a ViewModel boundary is probably missing.
+
+For related patterns, see the [React Architecture topic hub](/blog/topics/react-architecture).
+
+## Production Checklist
+
+Use a ViewModel boundary when:
+
+1. JSX is full of orchestration instead of rendering.
+2. The screen combines API data, permissions, flags, forms, and routing.
+3. You need to test behavior without rendering the whole component tree.
+4. A workflow touches several services or state sources.
+5. Several components need the same view-ready model.
+
+Skip it when a small component and one hook already explain the feature clearly.
 
 ## Conclusion
 

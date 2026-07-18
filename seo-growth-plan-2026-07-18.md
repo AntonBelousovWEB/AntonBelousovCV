@@ -34,6 +34,11 @@ Already strong:
   - `/blog/topics/javascript`
   - `/blog/topics/typescript`
   - `/blog/topics/technical-seo`
+- Topic hubs now include visible answer blocks, coverage sections, related topics, FAQ, CollectionPage schema, ItemList schema, and FAQPage schema.
+- IndexNow key and submission script are prepared.
+- Blog post JavaScript payload was reduced by removing client-side syntax highlighting.
+- RSS is generated automatically before build.
+- Weekly tracking CSV and post-deploy checklist are prepared.
 - DataForSEO baseline:
   - `anton belousov react developer`: site ranked #1.
   - `anton belousov`: site not visible in top 8.
@@ -119,6 +124,8 @@ Definition of done:
 - Searching `Anton Belousov` begins showing at least one owned property in top 10.
 
 ## Phase 2: Upgrade Topic Hubs into Real Landing Pages
+
+Status: implemented first version.
 
 Priority: P0  
 Expected impact: high  
@@ -237,6 +244,8 @@ Definition of done:
 
 ## Phase 3: Article-Level SERP Snippet Upgrades
 
+Status: first version implemented for the top 5 DataForSEO opportunity articles.
+
 Priority: P0  
 Expected impact: high  
 Cost: free
@@ -320,6 +329,8 @@ Definition of done:
 
 ## Phase 5: Free Indexing Acceleration
 
+Status: implemented code support; requires deploy before submission.
+
 Priority: P1  
 Expected impact: medium  
 Cost: free
@@ -337,10 +348,11 @@ Tasks:
    - Use IndexNow after each deploy.
 
 3. IndexNow implementation:
-   - Generate IndexNow key.
-   - Add `public/<key>.txt`.
-   - Add a small local script that reads sitemap URLs and POSTs changed URLs to IndexNow.
-   - Run manually after deploy.
+   - Generated IndexNow key.
+   - Added `public/4f8f7d8c5c2f4e9eb1f0a3c2d6e7b809.txt`.
+   - Added `npm run indexnow`.
+   - Run manually after deploy, because the key file must exist on the live domain first.
+   - Added `seo-post-deploy-checklist.md`.
 
 Definition of done:
 
@@ -351,13 +363,16 @@ Definition of done:
 
 ## Phase 6: Performance and Core Web Vitals
 
+Status: first major win implemented.
+
 Priority: P1  
 Expected impact: medium-high  
 Cost: free
 
-Current warning:
+Result:
 
-- Blog post route has large first-load JS because markdown rendering and syntax highlighting are heavy.
+- Blog post route dropped from about `263 kB / 367 kB First Load JS` to `974 B / 104 kB First Load JS` in `next build`.
+- The win came from removing client-side `react-syntax-highlighter` from blog rendering and using server-rendered code blocks.
 
 Tasks:
 
@@ -387,6 +402,8 @@ Priority: P1
 Expected impact: medium  
 Cost: free
 
+Status: profile and distribution templates prepared in `seo-external-entity-and-distribution.md`.
+
 No link exchanges. No paid dofollow links. No low-quality directories.
 
 Allowed:
@@ -415,6 +432,8 @@ Definition of done:
 - No spammy anchors.
 
 ## Phase 8: Measurement System
+
+Status: first version implemented with `seo-weekly-tracking.csv`.
 
 Priority: P0  
 Expected impact: required  

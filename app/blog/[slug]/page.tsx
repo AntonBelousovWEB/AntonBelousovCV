@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPostBySlug, getAllPosts, getRelatedPosts } from "@/lib/blog-utils";
+import {
+  getPostBySlug,
+  getAllPosts,
+  getRelatedPosts,
+  getTopicsForPost,
+} from "@/lib/blog-utils";
 import BlogContent from "@/components/blog/blog-content";
 import BlogHeader from "@/components/blog/BlogHeader";
 
@@ -49,6 +54,7 @@ export default async function BlogPost({
   }
 
   const relatedPosts = getRelatedPosts(post);
+  const postTopics = getTopicsForPost(post);
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const articleSchema = {
     "@context": "https://schema.org",
@@ -57,7 +63,7 @@ export default async function BlogPost({
     headline: post.title,
     description: post.excerpt,
     keywords: postKeywords(post.title, post.excerpt),
-    articleSection: "Frontend Engineering",
+    articleSection: postTopics.map((topic) => topic.title),
     inLanguage: "en",
     datePublished: post.date,
     dateModified: post.date,
@@ -67,6 +73,11 @@ export default async function BlogPost({
       name: "Anton Belousov Frontend Engineering Blog",
     },
     about: [
+      ...postTopics.map((topic) => ({
+        "@type": "Thing",
+        name: topic.title,
+        url: `${baseUrl}/blog/topics/${topic.slug}`,
+      })),
       {
         "@type": "Thing",
         name: "Frontend Architecture",
@@ -154,6 +165,23 @@ export default async function BlogPost({
         <article className="prose prose-lg md:prose-xl max-w-none">
           <BlogContent content={post.content} />
         </article>
+
+        {postTopics.length > 0 && (
+          <aside className="mt-14 border-t border-gray-200 pt-8">
+            <h2 className="text-2xl font-semibold text-gray-900">Topics</h2>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {postTopics.map((topic) => (
+                <Link
+                  key={topic.slug}
+                  href={`/blog/topics/${topic.slug}`}
+                  className="rounded-full border border-gray-300 px-4 py-2 text-base text-gray-700 hover:border-blue-500 hover:text-blue-600"
+                >
+                  {topic.title}
+                </Link>
+              ))}
+            </div>
+          </aside>
+        )}
 
         {relatedPosts.length > 0 && (
           <aside className="mt-14 border-t border-gray-200 pt-8">

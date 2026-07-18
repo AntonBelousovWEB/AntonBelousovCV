@@ -12,6 +12,18 @@ It lets a feature depend on what it needs, not on the exact tool that provides i
 
 But dependency inversion is also easy to overdo. Not every `fetch()` call needs an interface. Not every app needs an IoC container. The trick is to invert dependencies where substitution is real.
 
+## React Dependency Injection in One Paragraph
+
+React dependency injection means creating concrete services near the application boundary and passing the capabilities a feature needs through props, context, or a small composition root. The goal is not to imitate backend containers. The goal is to keep React features independent from API clients, storage, analytics, modal systems, and state libraries that may change later.
+
+## Props vs Context vs Container
+
+| Option | Best for | Avoid when |
+| --- | --- | --- |
+| Props | Short dependency paths, explicit feature APIs, simple tests | The same dependency must cross many unrelated levels |
+| React Context | Scoped app, route, or feature dependencies | It becomes one giant global service bag |
+| IoC container | Large object graphs, multiple scopes, complex assembly | There is only one implementation and no real substitution |
+
 ## The Problem: Features Glued to Infrastructure
 
 Imagine a feature that imports its own API client, reads global config, writes to a Zustand store, and opens modals through a concrete modal library.
@@ -204,6 +216,19 @@ Most React dependency injection does not need a library. The practical version i
 This gives you the important part of DI: the feature can ask for a capability without knowing the concrete transport, cache, storage, analytics client, or state manager.
 
 A container becomes useful only when dependency assembly itself is the problem. For most React apps, composition root plus scoped context is enough.
+
+For the broader architecture context, see the [React Architecture topic hub](/blog/topics/react-architecture).
+
+## Production Checklist
+
+Before adding dependency injection to a React feature, check:
+
+1. Is there a real dependency that may change?
+2. Can props solve it with less machinery?
+3. Is the dependency scoped to the app, route, feature, or test?
+4. Does the feature depend on a capability instead of a library?
+5. Can a test provide a fake through the same boundary production uses?
+6. Is the abstraction easier to understand than the concrete implementation?
 
 ## Conclusion
 

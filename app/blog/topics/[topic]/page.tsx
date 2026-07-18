@@ -90,10 +90,23 @@ export default async function BlogTopicPage({
       })),
     },
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: topic.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       <div className="wrapper max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
         <header className="mb-12 md:mb-16">
           <nav className="mb-6">
@@ -106,6 +119,24 @@ export default async function BlogTopicPage({
           </h1>
           <p className="text-xl text-gray-600 mt-4">{topic.description}</p>
         </header>
+
+        <section className="mb-12 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-6">
+            Short Answer
+          </h2>
+          <p className="leading-relaxed text-gray-700">{topic.answer}</p>
+        </section>
+
+        <section className="mb-12 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-6">
+            What This Topic Covers
+          </h2>
+          <ul className="list-disc pl-5 md:pl-8 space-y-3">
+            {topic.sections.map((section) => (
+              <li key={section}>{section}</li>
+            ))}
+          </ul>
+        </section>
 
         <section className="main mb-12 md:mb-24">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-8">
@@ -138,6 +169,53 @@ export default async function BlogTopicPage({
             ))}
           </div>
         </section>
+
+        <section className="mb-12 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-6">
+            Related Topics
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {blogTopics
+              .filter((relatedTopic) => relatedTopic.slug !== topic.slug)
+              .map((relatedTopic) => (
+                <Link
+                  key={relatedTopic.slug}
+                  href={`/blog/topics/${relatedTopic.slug}`}
+                  className="rounded-full border border-gray-300 px-4 py-2 text-base text-gray-700 hover:border-blue-500 hover:text-blue-600"
+                >
+                  {relatedTopic.title}
+                </Link>
+              ))}
+          </div>
+        </section>
+
+        <section className="mb-12 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-6">
+            FAQ
+          </h2>
+          <div className="space-y-6">
+            {topic.faq.map((item) => (
+              <article key={item.question}>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {item.question}
+                </h3>
+                <p className="mt-2 leading-relaxed text-gray-700">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <footer className="mt-16 pt-8 border-t border-gray-300 text-center text-gray-600">
+          <p>
+            Built by{" "}
+            <Link href="/" className="text-blue-600 hover:underline">
+              Anton Belousov, Senior Frontend Engineer
+            </Link>
+            .
+          </p>
+        </footer>
       </div>
     </>
   );

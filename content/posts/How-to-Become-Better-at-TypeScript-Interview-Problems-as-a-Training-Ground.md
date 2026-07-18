@@ -12,6 +12,20 @@ Interview problems can be useful for that, even when they look artificial. They 
 
 Good TypeScript helps the product code say what is allowed, what is impossible, and what future developers can safely change.
 
+## TypeScript Interview Practice in One Paragraph
+
+Good TypeScript interview practice should train product modeling, not just type tricks. The strongest exercises make you explain invalid states, preserve inference across function boundaries, validate unknown data, and choose when strictness helps the team. Senior TypeScript is less about clever conditional types and more about safe, readable domain constraints.
+
+## Problem Types Worth Practicing
+
+| Problem type | What it tests | Production value |
+| --- | --- | --- |
+| Discriminated union modeling | State clarity and narrowing | Prevents impossible UI states |
+| Generic helper design | Inference preservation | Keeps reusable utilities safe |
+| Runtime validation boundary | Trust boundaries | Protects app code from unknown data |
+| Optional-heavy refactor | Domain understanding | Removes ambiguous object shapes |
+| Form state modeling | Product flow constraints | Prevents conflicting loading/success/error states |
+
 ## Why Interview Problems Help
 
 Real projects are noisy. Business logic, deadlines, old abstractions, naming problems, and framework details all compete for attention. TypeScript interview problems remove that noise.
@@ -138,6 +152,19 @@ Try these:
 5. Design a form state type where `submitting`, `success`, and `error` cannot be true at the same time.
 
 The answer matters less than the reasoning. Senior TypeScript is the ability to choose where strictness pays for itself and where it only slows the team down.
+
+For more TypeScript-focused material, see the [TypeScript topic hub](/blog/topics/typescript).
+
+## Production Checklist
+
+When applying TypeScript lessons to real frontend code:
+
+1. Model domain states before writing generic helpers.
+2. Use unions when optional fields hide different cases.
+3. Validate external data before trusting types.
+4. Preserve inference where the caller gives useful information.
+5. Prefer readable types over impressive types.
+6. Delete abstractions that force developers into `as unknown as`.
 
 ## Conclusion
 

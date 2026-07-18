@@ -12,6 +12,20 @@ The real value of SOLID is that it gives names to problems we already feel in gr
 
 In frontend work, the goal is not to "apply SOLID." The goal is to keep change cheap.
 
+## Frontend Architecture in One Paragraph
+
+Frontend architecture is the set of boundaries that keeps product change cheap: where rendering lives, where data is loaded, where state is owned, where product rules are named, and which modules are allowed to know about infrastructure. In React, good architecture is usually less about folder names and more about making dependency direction, responsibility, and replacement cost visible.
+
+## Which Pattern Should I Choose?
+
+| Pressure | Useful pattern | Why |
+| --- | --- | --- |
+| Component mixes fetching and rendering | Container / Presentational split | Separates data ownership from UI representation |
+| Screen orchestration dominates JSX | ViewModel | Gives presentation logic a home |
+| Feature imports API/storage directly | Dependency inversion | Protects feature code from infrastructure changes |
+| Many feature-specific flags in one component | Composition | Extends behavior without switchboard props |
+| Shared subsystem has messy internals | Facade | Gives consumers a small stable API |
+
 ## Why Frontend Developers Need Fundamentals
 
 A lot of frontend architecture discussions start too late. People argue about Feature-Sliced Design, Clean Architecture, MVVM, signals, Zustand, MobX, or folder names before they can explain what responsibility a module actually has.
@@ -200,6 +214,19 @@ The useful questions are:
 Patterns like Container/Presentational, ViewModel, Facade, Repository, Composition Root, and Feature-Sliced Design are only useful when they answer those questions.
 
 The senior move is not to use every pattern. It is to pick the smallest boundary that prevents the next predictable change from damaging the whole feature.
+
+For more senior-level frontend architecture material, see the [Senior Frontend Developer topic hub](/blog/topics/senior-frontend-developer) and the [React Architecture topic hub](/blog/topics/react-architecture).
+
+## Production Checklist
+
+Before introducing an architecture pattern, ask:
+
+1. What change pressure are we solving?
+2. What dependency direction are we accepting?
+3. Can a smaller component/hook/function solve it?
+4. Does the pattern reduce edits across unrelated files?
+5. Will a new teammate understand the boundary quickly?
+6. Is the pattern enforced by code, naming, imports, or only hope?
 
 ## Conclusion
 

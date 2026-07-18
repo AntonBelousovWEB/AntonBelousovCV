@@ -1,0 +1,8 @@
+date,url,target_query,source,impressions,clicks,ctr,average_position,indexed,change_made,next_action
+2026-07-18,https://anton-belousov-cv.vercel.app/,anton belousov,Google Search Console,,,,,unknown,"Baseline after entity/schema/topic hub work","Check after deploy and indexing"
+2026-07-18,https://anton-belousov-cv.vercel.app/,anton belousov react developer,DataForSEO,,,,1,yes,"Baseline: ranked #1 before latest changes","Recheck after indexing"
+2026-07-18,https://anton-belousov-cv.vercel.app/blog/topics/senior-frontend-developer,senior frontend developer,Google Search Console,,,,,unknown,"New topic hub","Submit URL after deploy"
+2026-07-18,https://anton-belousov-cv.vercel.app/blog/topics/react-architecture,react architecture patterns,Google Search Console,,,,,unknown,"New topic hub","Submit URL after deploy"
+2026-07-18,https://anton-belousov-cv.vercel.app/blog/topics/javascript,senior javascript developer,Google Search Console,,,,,unknown,"New topic hub","Submit URL after deploy"
+2026-07-18,https://anton-belousov-cv.vercel.app/blog/topics/typescript,typescript interview problems frontend,Google Search Console,,,,,unknown,"New topic hub","Submit URL after deploy"
+2026-07-18,https://anton-belousov-cv.vercel.app/blog/topics/technical-seo,technical seo frontend developer,Google Search Console,,,,,unknown,"New topic hub","Submit URL after deploy"

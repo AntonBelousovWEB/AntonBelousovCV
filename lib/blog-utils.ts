@@ -36,6 +36,25 @@ export const blogTopics = [
     title: "Senior Frontend Developer",
     description:
       "Senior frontend engineering articles about architecture, delivery quality, mentoring, code review, and production React systems.",
+    answer:
+      "A senior frontend developer owns more than UI implementation. The real work is shaping architecture, reducing delivery risk, improving performance, reviewing trade-offs, mentoring engineers, and keeping product code understandable as complexity grows.",
+    sections: [
+      "Architecture decisions and boundaries",
+      "Code review, mentoring, and delivery quality",
+      "Performance, Core Web Vitals, and technical SEO",
+    ],
+    faq: [
+      {
+        question: "What does a senior frontend developer actually own?",
+        answer:
+          "A senior frontend developer owns frontend architecture, code quality, performance, delivery trade-offs, mentoring, and the technical decisions that keep product features maintainable.",
+      },
+      {
+        question: "Is a senior frontend developer the same as a React developer?",
+        answer:
+          "No. React can be part of the stack, but senior frontend work includes architecture, browser performance, accessibility, state boundaries, delivery process, and technical SEO.",
+      },
+    ],
     keywords: ["senior", "frontend", "developer", "architecture", "lead"],
   },
   {
@@ -43,6 +62,25 @@ export const blogTopics = [
     title: "React Architecture",
     description:
       "React architecture notes about composition, dependency inversion, ViewModel boundaries, state placement, and scalable frontend structure.",
+    answer:
+      "React architecture is the set of boundaries that decide where rendering, orchestration, state, infrastructure, and product rules live. Good React architecture makes change cheaper without turning the app into a private framework.",
+    sections: [
+      "Composition root and dependency inversion",
+      "ViewModel, Facade, and feature boundaries",
+      "State management as business logic placement",
+    ],
+    faq: [
+      {
+        question: "What is React architecture?",
+        answer:
+          "React architecture is how a codebase organizes components, state, effects, data access, feature boundaries, and infrastructure so the product can keep changing safely.",
+      },
+      {
+        question: "Which React architecture pattern should I start with?",
+        answer:
+          "Start with composition, clear component boundaries, and colocated feature logic. Add ViewModels, repositories, or dependency inversion only when change pressure makes them useful.",
+      },
+    ],
     keywords: ["react", "architecture", "dependency", "viewmodel", "composition"],
   },
   {
@@ -50,6 +88,25 @@ export const blogTopics = [
     title: "JavaScript",
     description:
       "JavaScript articles about language mechanics, browser behavior, proxies, reactivity, performance, and senior frontend interviews.",
+    answer:
+      "Senior JavaScript knowledge is not trivia. It is understanding execution, identity, closures, `this`, async work, browser constraints, proxies, reactivity, and how those mechanics affect real frontend architecture.",
+    sections: [
+      "Language mechanics that affect production UI",
+      "Reactivity, Proxy, and browser behavior",
+      "Senior JavaScript interview reasoning",
+    ],
+    faq: [
+      {
+        question: "What JavaScript should a senior frontend developer know?",
+        answer:
+          "They should know execution context, closures, prototypes, `this`, async behavior, browser rendering, memory, events, modules, and how frameworks build on those primitives.",
+      },
+      {
+        question: "Is JavaScript still important if I use React?",
+        answer:
+          "Yes. React hides some mechanics but does not remove them. Debugging performance, state, events, and rendering still requires strong JavaScript fundamentals.",
+      },
+    ],
     keywords: ["javascript", "proxy", "this", "reactivity", "performance"],
   },
   {
@@ -57,6 +114,25 @@ export const blogTopics = [
     title: "TypeScript",
     description:
       "TypeScript articles about type modeling, frontend interview problems, runtime boundaries, generics, and maintainable product code.",
+    answer:
+      "TypeScript is most valuable when it models product states clearly. The goal is not clever types; the goal is making invalid states harder to express and safe changes easier to make.",
+    sections: [
+      "Domain modeling with discriminated unions",
+      "Generics that preserve useful information",
+      "Runtime validation at trust boundaries",
+    ],
+    faq: [
+      {
+        question: "What makes TypeScript useful in frontend applications?",
+        answer:
+          "TypeScript helps model UI states, API boundaries, form states, feature flags, and domain rules so developers can change code with fewer hidden assumptions.",
+      },
+      {
+        question: "What should I practice for senior TypeScript interviews?",
+        answer:
+          "Practice modeling invalid states, writing useful generics, validating unknown input, refactoring optional-heavy types, and explaining trade-offs in plain language.",
+      },
+    ],
     keywords: ["typescript", "types", "interview", "frontend", "generic"],
   },
   {
@@ -64,6 +140,25 @@ export const blogTopics = [
     title: "Technical SEO",
     description:
       "Technical SEO articles for frontend developers working with metadata, structured data, Core Web Vitals, performance, and indexable UI.",
+    answer:
+      "Technical SEO for frontend developers is about making valuable content crawlable, understandable, fast, canonical, and trustworthy. It connects rendering, metadata, structured data, links, and Core Web Vitals.",
+    sections: [
+      "Metadata, canonical URLs, and structured data",
+      "Crawlable links and indexable rendering",
+      "Core Web Vitals and page experience",
+    ],
+    faq: [
+      {
+        question: "Why should frontend developers care about technical SEO?",
+        answer:
+          "Frontend decisions control rendering, links, metadata, performance, structured data, and whether search engines can understand a page at all.",
+      },
+      {
+        question: "Is technical SEO only metadata?",
+        answer:
+          "No. Metadata helps snippets, but technical SEO also includes crawlability, internal links, canonical signals, structured data, JavaScript rendering, and Core Web Vitals.",
+      },
+    ],
     keywords: ["seo", "technical", "metadata", "schema", "performance"],
   },
 ] as const;
@@ -110,6 +205,13 @@ export function getPostsByTopic(topic: BlogTopic): Post[] {
     const text = `${post.title} ${post.excerpt} ${post.content}`.toLowerCase();
     return topic.keywords.some((keyword) => text.includes(keyword));
   });
+}
+
+export function getTopicsForPost(post: Post): BlogTopic[] {
+  const text = `${post.title} ${post.excerpt} ${post.content}`.toLowerCase();
+  return blogTopics.filter((topic) =>
+    topic.keywords.some((keyword) => text.includes(keyword))
+  );
 }
 
 const stopWords = new Set([
