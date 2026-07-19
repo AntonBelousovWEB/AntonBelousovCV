@@ -9,6 +9,8 @@ export const personSchema = {
     "Anton Belousov React Developer",
   ],
   jobTitle: "Senior Frontend Engineer",
+  image:
+    "https://anton-belousov-cv.vercel.app/img/anton-belousov-senior-frontend-engineer.webp",
   email: "polpoltrop228@gmail.com",
   telephone: "+380663208556",
   address: {

@@ -1,32 +1,83 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const profileImageUrl =
+  "https://anton-belousov-cv.vercel.app/img/anton-belousov-senior-frontend-engineer.webp";
+const profileImageAlt =
+  "Anton Belousov, Senior Frontend Engineer specializing in React, Next.js, TypeScript, performance, and technical SEO";
 
 export default function CVTemplate() {
   return (
-    <div className="max-w-7xl mx-auto p-6 md:p-10 bg-white text-gray-800 text-base sm:text-lg md:text-xl lg:text-2xl">
+    <div className="mx-auto w-full max-w-7xl bg-white px-4 py-6 text-base text-gray-800 sm:px-5 sm:text-lg md:p-10 md:text-xl lg:text-2xl">
       <header
         className="mb-12 md:mb-24"
         itemScope
         itemType="https://schema.org/Person"
       >
-        <h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-1"
-          itemProp="name"
-        >
-          Anton Belousov
-        </h1>
-        <p className="text-base sm:text-lg text-gray-500 mb-2">
-          Web Development • tech.SEO • System Design • Mentoring
-        </p>
-        <h2
-          className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 mb-2"
-          itemProp="jobTitle"
-        >
-          Senior Frontend Engineer
-        </h2>
-        <p className="text-lg sm:text-xl text-gray-500 mb-6 md:mb-12">
-          Performance & Technical SEO | Scalable Architecture | 5+ years
-          experience
-        </p>
+        <div className="mb-6 grid grid-cols-[112px_minmax(0,1fr)] items-center gap-x-4 gap-y-5 sm:grid-cols-[128px_minmax(0,1fr)] md:mb-12 md:grid-cols-12 md:items-start md:gap-6">
+          <div className="min-w-0 md:col-span-8">
+            <h1
+              className="mb-1 text-3xl font-bold leading-tight min-[390px]:text-4xl sm:text-5xl lg:text-6xl"
+              itemProp="name"
+            >
+              Anton Belousov
+            </h1>
+            <p className="text-sm leading-snug text-gray-500 sm:text-lg">
+              Web Development • tech.SEO • System Design • Mentoring
+            </p>
+          </div>
+
+          <div className="col-span-2 md:col-span-8">
+            <h2
+              className="mb-2 text-2xl text-gray-600 sm:text-3xl lg:text-4xl"
+              itemProp="jobTitle"
+            >
+              Senior Frontend Engineer
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-500">
+              Performance & Technical SEO | Scalable Architecture | 5+ years
+              experience
+            </p>
+          </div>
+
+          <figure
+            itemProp="image"
+            itemScope
+            itemType="https://schema.org/ImageObject"
+            className="col-start-1 row-start-1 justify-self-start md:col-span-4 md:col-start-9 md:row-span-2 md:row-start-1 md:justify-self-center"
+          >
+            <Image
+              src="/img/anton-belousov-senior-frontend-engineer.webp"
+              width={180}
+              height={180}
+              sizes="(max-width: 389px) 112px, (max-width: 767px) 128px, 180px"
+              alt={profileImageAlt}
+              itemProp="contentUrl"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              className="h-28 w-28 rounded-2xl object-cover shadow-sm ring-1 ring-gray-200 sm:h-32 sm:w-32 md:h-44 md:w-44"
+            />
+            <meta itemProp="url" content={profileImageUrl} />
+            <meta itemProp="name" content={profileImageAlt} />
+            <meta itemProp="width" content="360px" />
+            <meta itemProp="height" content="360px" />
+            <meta itemProp="representativeOfPage" content="true" />
+            <span
+              itemProp="thumbnail"
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              hidden
+            >
+              <meta
+                itemProp="contentUrl"
+                content="https://anton-belousov-cv.vercel.app/img/anton-belousov-senior-frontend-engineer-thumb.webp"
+              />
+              <meta itemProp="width" content="180px" />
+              <meta itemProp="height" content="180px" />
+            </span>
+          </figure>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <div>

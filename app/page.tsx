@@ -16,6 +16,8 @@ const profilePageSchema = {
     "@id": "https://anton-belousov-cv.vercel.app/#person",
     name: "Anton Belousov",
     jobTitle: "Senior Frontend Engineer",
+    image:
+      "https://anton-belousov-cv.vercel.app/img/anton-belousov-senior-frontend-engineer.webp",
     knowsAbout: [
       "JavaScript",
       "React",
