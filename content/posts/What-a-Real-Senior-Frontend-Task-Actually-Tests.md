@@ -1,7 +1,9 @@
 ---
 title: "What a Real Senior Frontend Task Actually Tests"
 date: 2025-12-13
+updated: 2026-08-13
 excerpt: "Senior frontend tasks are not about syntax tricks. They test judgment, trade-offs, maintainability, product thinking, and the ability to reduce ambiguity."
+image: "/img/blog/what-a-real-senior-frontend-task-actually-tests.webp"
 ---
 
 ## Introduction

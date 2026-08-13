@@ -5,6 +5,16 @@ const baseUrl = "https://anton-belousov-cv.vercel.app";
 
 export default function BlogPage() {
   const posts = getAllPosts();
+  const recommendedSlugs = [
+    "architecture-beats-stack-refactoring-react-without-switching-libraries",
+    "fail-fast-frontend-error-handling-without-confusing-users",
+    "model-view-patterns-for-react-developers",
+    "state-management-is-business-logic-placement",
+    "react-internationalization-without-pain-designing-i18n-as-architecture",
+  ];
+  const recommendedPosts = recommendedSlugs
+    .map((slug) => posts.find((post) => post.slug === slug))
+    .filter(Boolean);
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -93,6 +103,23 @@ export default function BlogPage() {
               className="rounded-full border border-gray-300 px-4 py-2 text-base text-gray-700 hover:border-blue-500 hover:text-blue-600"
             >
               {topic.title}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-12 md:mb-24">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-gray-300 pb-3 mb-8">
+          Recommended Architecture Reading
+        </h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {recommendedPosts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="rounded-lg border border-gray-200 p-4 text-lg font-semibold text-gray-800 hover:border-blue-500 hover:text-blue-600"
+            >
+              {post.title}
             </Link>
           ))}
         </div>

@@ -1,7 +1,9 @@
 ---
 title: "Dependency Inversion in React: Composition Root, DI, and Service Boundaries"
 date: 2026-07-09
+updated: 2026-08-13
 excerpt: "How to use dependency inversion, dependency injection, composition roots, React context, and service boundaries in frontend architecture without over-engineering."
+image: "/img/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries.webp"
 ---
 
 ## Introduction

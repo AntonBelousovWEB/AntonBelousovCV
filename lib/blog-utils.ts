@@ -26,7 +26,9 @@ export interface Post {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
   excerpt: string;
+  image?: string;
   content: string;
 }
 
@@ -182,7 +184,11 @@ export function getAllPosts(): Post[] {
         slug,
         title: matterResult.data.title,
         date: formatPostDate(matterResult.data.date),
+        updated: matterResult.data.updated
+          ? formatPostDate(matterResult.data.updated)
+          : undefined,
         excerpt: matterResult.data.excerpt,
+        image: matterResult.data.image,
         content: matterResult.content
       };
     });
@@ -271,7 +277,11 @@ export function getPostBySlug(slug: string): Post | null {
       slug: createPostSlug(fileName),
       title: matterResult.data.title,
       date: formatPostDate(matterResult.data.date),
+      updated: matterResult.data.updated
+        ? formatPostDate(matterResult.data.updated)
+        : undefined,
       excerpt: matterResult.data.excerpt,
+      image: matterResult.data.image,
       content: matterResult.content
     };
   } catch (error) {

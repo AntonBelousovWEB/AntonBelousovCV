@@ -1,7 +1,9 @@
 ---
 title: "Frontend Architecture Fundamentals: SOLID Without Dogma"
 date: 2026-07-07
+updated: 2026-08-13
 excerpt: "A practical frontend architecture article on using SOLID principles in React without turning them into rigid rules or over-engineered ceremony."
+image: "/img/blog/frontend-architecture-fundamentals-solid-without-dogma.webp"
 ---
 
 ## Introduction

@@ -1,7 +1,9 @@
 ---
 title: "Model-View Patterns for React Developers: MVC, MVP, MVVM, and ViewModel"
 date: 2026-07-08
+updated: 2026-08-13
 excerpt: "A senior-friendly explanation of MVC, MVP, MVVM, and ViewModel thinking for React developers who want clearer frontend architecture."
+image: "/img/blog/model-view-patterns-for-react-developers.webp"
 ---
 
 ## Introduction

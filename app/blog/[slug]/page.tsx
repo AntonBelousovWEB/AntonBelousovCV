@@ -56,6 +56,7 @@ export default async function BlogPost({
   const relatedPosts = getRelatedPosts(post);
   const postTopics = getTopicsForPost(post);
   const postUrl = `${baseUrl}/blog/${post.slug}`;
+  const postImage = `${baseUrl}${post.image ?? "/og-image.png"}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -66,7 +67,7 @@ export default async function BlogPost({
     articleSection: postTopics.map((topic) => topic.title),
     inLanguage: "en",
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     isPartOf: {
       "@type": "Blog",
       "@id": `${baseUrl}/blog#blog`,
@@ -121,7 +122,7 @@ export default async function BlogPost({
       "@id": `${baseUrl}/#person`,
       name: "Anton Belousov",
     },
-    image: `${baseUrl}/og-image.png`,
+    image: postImage,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": postUrl,

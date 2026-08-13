@@ -22,6 +22,7 @@ export async function generateMetadata({
 
   const baseUrl = "https://anton-belousov-cv.vercel.app";
   const url = `${baseUrl}/blog/${post.slug}`;
+  const image = post.image ?? "/og-image.png";
 
   return {
     title: `${post.title} | Anton Belousov`,
@@ -37,10 +38,11 @@ export async function generateMetadata({
       title: post.title,
       description: post.excerpt,
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       authors: ["Anton Belousov"],
       images: [
         {
-          url: "/og-image.png",
+          url: image,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -51,7 +53,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: ["/og-image.png"],
+      images: [image],
     },
     alternates: {
       canonical: url,

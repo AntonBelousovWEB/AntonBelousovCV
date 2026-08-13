@@ -1,7 +1,9 @@
 ---
 title: "The Mental Model Behind Reactivity: Observers, Signals, and Frontend State"
 date: 2025-05-08
+updated: 2026-08-13
 excerpt: "A senior frontend perspective on reactivity, observer patterns, signals, and why state management becomes easier when you understand the dependency graph underneath."
+image: "/img/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state.webp"
 ---
 
 ## Introduction

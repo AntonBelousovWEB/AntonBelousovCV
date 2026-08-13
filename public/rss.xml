@@ -4,6 +4,42 @@
 <title>Anton Belousov Blog</title>
 <link>https://anton-belousov-cv.vercel.app/blog</link>
 <description>Senior frontend engineering notes on React, architecture, TypeScript, performance, and technical SEO.</description>
+<lastBuildDate>Thu, 13 Aug 2026 13:56:49 GMT</lastBuildDate>
+<item>
+  <title>Dependency Inversion in React: Composition Root, DI, and Service Boundaries</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</guid>
+  <description>How to use dependency inversion, dependency injection, composition roots, React context, and service boundaries in frontend architecture without over-engineering.</description>
+  <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Frontend Architecture Fundamentals: SOLID Without Dogma</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</guid>
+  <description>A practical frontend architecture article on using SOLID principles in React without turning them into rigid rules or over-engineered ceremony.</description>
+  <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Model-View Patterns for React Developers: MVC, MVP, MVVM, and ViewModel</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</guid>
+  <description>A senior-friendly explanation of MVC, MVP, MVVM, and ViewModel thinking for React developers who want clearer frontend architecture.</description>
+  <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Mental Model Behind Reactivity: Observers, Signals, and Frontend State</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</guid>
+  <description>A senior frontend perspective on reactivity, observer patterns, signals, and why state management becomes easier when you understand the dependency graph underneath.</description>
+  <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>What a Real Senior Frontend Task Actually Tests</title>
+  <link>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</link>
+  <guid>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</guid>
+  <description>Senior frontend tasks are not about syntax tricks. They test judgment, trade-offs, maintainability, product thinking, and the ability to reduce ambiguity.</description>
+  <pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The Cost of Abstract Interfaces in Frontend Architecture</title>
   <link>https://anton-belousov-cv.vercel.app/blog/the-cost-of-abstract-interfaces-in-frontend-architecture</link>
@@ -66,27 +102,6 @@
   <guid>https://anton-belousov-cv.vercel.app/blog/architecture-beats-stack-refactoring-react-without-switching-libraries</guid>
   <description>Why frontend architecture matters more than library choice, and how to refactor React applications by moving business logic, not chasing a new stack.</description>
   <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Dependency Inversion in React: Composition Root, DI, and Service Boundaries</title>
-  <link>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</link>
-  <guid>https://anton-belousov-cv.vercel.app/blog/dependency-inversion-in-react-composition-root-di-and-service-boundaries</guid>
-  <description>How to use dependency inversion, dependency injection, composition roots, React context, and service boundaries in frontend architecture without over-engineering.</description>
-  <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Model-View Patterns for React Developers: MVC, MVP, MVVM, and ViewModel</title>
-  <link>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</link>
-  <guid>https://anton-belousov-cv.vercel.app/blog/model-view-patterns-for-react-developers</guid>
-  <description>A senior-friendly explanation of MVC, MVP, MVVM, and ViewModel thinking for React developers who want clearer frontend architecture.</description>
-  <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Frontend Architecture Fundamentals: SOLID Without Dogma</title>
-  <link>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</link>
-  <guid>https://anton-belousov-cv.vercel.app/blog/frontend-architecture-fundamentals-solid-without-dogma</guid>
-  <description>A practical frontend architecture article on using SOLID principles in React without turning them into rigid rules or over-engineered ceremony.</description>
-  <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>I Shipped v1 of My Own Frontend Starter Template</title>
@@ -159,13 +174,6 @@
   <pubDate>Sun, 04 Jan 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>What a Real Senior Frontend Task Actually Tests</title>
-  <link>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</link>
-  <guid>https://anton-belousov-cv.vercel.app/blog/what-a-real-senior-frontend-task-actually-tests</guid>
-  <description>Senior frontend tasks are not about syntax tricks. They test judgment, trade-offs, maintainability, product thinking, and the ability to reduce ambiguity.</description>
-  <pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>Scaling Frontend Architecture When Product Complexity Grows</title>
   <link>https://anton-belousov-cv.vercel.app/blog/scaling-frontend-architecture-when-product-complexity-grows</link>
   <guid>https://anton-belousov-cv.vercel.app/blog/scaling-frontend-architecture-when-product-complexity-grows</guid>
@@ -185,13 +193,6 @@
   <guid>https://anton-belousov-cv.vercel.app/blog/javascript-proxy-explained-through-real-two-way-binding</guid>
   <description>A practical explanation of JavaScript Proxy, two-way binding, and the architectural trade-offs behind intercepting reads and writes in frontend applications.</description>
   <pubDate>Mon, 26 May 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>The Mental Model Behind Reactivity: Observers, Signals, and Frontend State</title>
-  <link>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</link>
-  <guid>https://anton-belousov-cv.vercel.app/blog/the-mental-model-behind-reactivity-observers-signals-and-frontend-state</guid>
-  <description>A senior frontend perspective on reactivity, observer patterns, signals, and why state management becomes easier when you understand the dependency graph underneath.</description>
-  <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Why Good SEO Is About Empathy</title>
